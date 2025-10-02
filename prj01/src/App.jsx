@@ -1,16 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Outlet } from 'react-router-dom';
+
 import './App.css'
-import Footer from './components/Footer.jsx'
 
-function App() {
+import Footer from './components/Footer/index.jsx'
+import NavBar from './components/NavBar/index.jsx'
 
+export default function App() {
   return (
     <>
-      <Footer></Footer>
+      <NavBar />
+      
+      <main>
+        {/* O Outlet é um espaço reservado que vai renderizar o componente da rota atual. */}
+        <Outlet />
+      </main>
+
+      <Footer />
     </>
   )
 }
-
-export default App

@@ -1,0 +1,11 @@
+.navbar{
+    background: #c79a69 !important;
+}
+
+.navbar-nav > .nav-item.active > a {
+    color: #1a6904 !important;
+}
+
+.navbar-nav > .nav-item.active > a:before {
+    background-color: #1a6904 !important;
+}

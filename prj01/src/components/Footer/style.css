@@ -1,0 +1,26 @@
+.footer{
+    background: #c79a69;
+}
+.footer p {
+    color: black !important;
+}
+
+.footer .footer-heading {
+    color: black;
+}
+
+.footer ul.list-unstyled li a {
+    color: black;
+}
+
+.footer .block-23 ul li a {
+    color: black;
+}
+
+.block-23 ul li span {
+    color: black;
+}
+
+.footer .block-23 ul li .icon {
+    color: black;
+}
