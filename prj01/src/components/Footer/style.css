@@ -6,21 +6,45 @@
 }
 
 .footer .footer-heading {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .footer ul.list-unstyled li a {
     color: black;
+    
 }
+
+
+.footer ul.list-unstyled li a:hover {
+  color: #53714b;
+  
+  
+}
+
 
 .footer .block-23 ul li a {
     color: black;
 }
 
+
 .block-23 ul li span {
     color: black;
+    margin-left: 5px;
 }
 
 .footer .block-23 ul li .icon {
     color: black;
+    margin-right: 0px;
+    
+}
+
+
+.linkColorlib 
+{
+    color : black;
+}
+
+.linkColorlib:hover
+{
+    color : #53714b;
 }

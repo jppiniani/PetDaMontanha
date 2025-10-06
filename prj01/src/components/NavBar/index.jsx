@@ -22,9 +22,9 @@ export default function NavBar(){
                 src={PetDaMontanhaLogo}
                 alt="Logo Pet da Montanha"
                 className="mr-2"
-                style={{ width: 30, height: 30, verticalAlign: "-4px" }}
+                style={{ width: 40, height: 40, verticalAlign: "-4px" }}
             />
-            Pet da Montanha
+            
             </a>
             <button
             className="navbar-toggler"

@@ -11,6 +11,7 @@ export default function App() {
     <>
       <NavBar />
       
+      
       <main>
         {/* O Outlet é um espaço reservado que vai renderizar o componente da rota atual. */}
         <Outlet />

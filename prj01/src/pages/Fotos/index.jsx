@@ -1,7 +1,7 @@
 export default function Fotos(){
     return(
         <>
-        <h1>Página de Fotos</h1>
+        <h1>Galeria</h1>
         </>
     )
 }

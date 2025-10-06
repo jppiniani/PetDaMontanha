@@ -1,7 +1,7 @@
 export default function Funcionarios(){
     return(
         <>
-        <h1>Página de Funcionarios</h1>
+        <h1>Funcionários</h1>
         </>
     )
 }
