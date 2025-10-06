@@ -3,6 +3,8 @@ export default function Inicio(){
         <>
         <h1>Início</h1>
         <p>Testezão top</p>
+        
         </>
     )
 }
+

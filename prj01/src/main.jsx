@@ -16,7 +16,7 @@ import Sobre from './pages/Sobre/index.jsx'
 import Funcionarios from './pages/funcionarios/index.jsx';
 import Servicos from './pages/servicos/index.jsx';
 import Fotos from './pages/fotos/index.jsx';
-import Planos from './pages/planos/index.jsx';
+import Padaria from './pages/Padaria/index.jsx';
 import Contato from './pages/contato/index.jsx';
 
 const router = createBrowserRouter([
@@ -45,8 +45,8 @@ const router = createBrowserRouter([
         element: <Fotos />,
       },
       {
-        path: "planos", 
-        element: <Planos />,
+        path: "padaria", 
+        element: <Padaria />,
       },
       {
         path: "contato", 

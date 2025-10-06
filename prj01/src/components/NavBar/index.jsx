@@ -65,9 +65,9 @@ export default function NavBar(){
                         Fotos
                     </Link>
                 </li>
-                <li className={pathname === "/planos" ? "nav-item active" : "nav-item"}>
-                    <Link to="/planos" className="nav-link">
-                        Planos
+                <li className={pathname === "/padaria" ? "nav-item active" : "nav-item"}>
+                    <Link to="/padaria" className="nav-link">
+                        Padaria PET
                     </Link>
                 </li>
                 <li className={pathname === "/contato" ? "nav-item active" : "nav-item"}>
