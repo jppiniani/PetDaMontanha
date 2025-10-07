@@ -16,13 +16,13 @@ export default function NavBar(){
         className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
         id="ftco-navbar"
         >
-        <div className="container">
+        <div className="container container-nav">
             <a className="navbar-brand" href="index.html">
             <img
                 src={PetDaMontanhaLogo}
                 alt="Logo Pet da Montanha"
                 className="mr-2"
-                style={{ width: 40, height: 40, verticalAlign: "-4px" }}
+                style={{ width: 40, height: 40, verticalAlign: "-4px"}}
             />
             
             </a>
@@ -73,6 +73,11 @@ export default function NavBar(){
                 <li className={pathname === "/contato" ? "nav-item active" : "nav-item"}>
                     <Link to="/contato" className="nav-link">
                         Contato
+                    </Link>
+                </li>
+                <li className={pathname === "/entrar" ? "nav-item active-btn" : "nav-item"} style={{position: 'absolute', right:'100px'}}>
+                    <Link to="/entrar" className="btn btn-login" >
+                        Entrar
                     </Link>
                 </li>
             </ul>

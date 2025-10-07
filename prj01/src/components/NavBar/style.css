@@ -9,3 +9,35 @@
 .navbar-nav > .nav-item.active > a:before {
     background-color: #1a6904 !important;
 }
+
+.navbar-nav > .nav-item-active-btn > a{
+    color:white;
+}
+
+.nav-link{
+    color: white;
+    margin-inline: 20px;
+    text-align: center;
+    
+}
+
+/* css da navbar  */
+.container-nav{
+    margin-inline-start: 5px;
+    
+}
+
+/* css do botão de login */
+.btn-login{
+    color:white;
+    background-color: #1a6904;
+    padding-inline: 20px;
+}
+
+.btn-login:hover {
+    background-color: #91c582;
+}
+
+.nav-item.active > .btn-login:before{
+    color:white;
+}

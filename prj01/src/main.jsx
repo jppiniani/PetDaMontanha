@@ -18,6 +18,7 @@ import Servicos from './pages/servicos/index.jsx';
 import Fotos from './pages/fotos/index.jsx';
 import Padaria from './pages/Padaria/index.jsx';
 import Contato from './pages/contato/index.jsx';
+import Entrar from './pages/Entrar/index.jsx';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "contato", 
         element: <Contato />,
+      },
+      {
+        path: "entrar", 
+        element: <Entrar />,
       },
     ],
   },
