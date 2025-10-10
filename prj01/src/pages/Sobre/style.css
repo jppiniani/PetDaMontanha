@@ -1,1 +1,46 @@
 /* Eu fiz esses arquivos css em pastas para caso haja alguma alteração específica no css para não ficar mexendo no bootstrap */
+.img-fluid{
+    max-width: 70%;
+}
+
+.img-fluid1 {
+    max-width: 90%;
+    height: auto;
+    margin-top: 23px;
+}
+
+.img-fluid2 {
+    max-width: 90%;
+    height: auto;
+    margin-top: 23px;
+}
+
+.img-fluid3 {
+    max-width: 90%;
+    height: auto;
+    margin-top: 23px;
+}
+
+.ftco-section{
+    padding: 7em 0;
+}
+
+.sidebar-box {
+    margin-bottom: 40px;
+    font-size: 15px;
+    width: 100%;
+    float: left;
+}
+
+.categories li, .sidelink li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000000;
+    list-style: none;
+}
+
+a {
+    color: rgb(1, 131, 1);
+    text-decoration: underline;
+}

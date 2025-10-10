@@ -1,1 +1,46 @@
 /* Eu fiz esses arquivos css em pastas para caso haja alguma alteração específica no css para não ficar mexendo no bootstrap */
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #53714b; 
+    opacity: 0.4;
+}
+
+.hero-wrap-custom {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    display: flex;
+    align-items: center;
+    background-color: #759f69;
+    background-attachment: fixed
+}
+
+.hero-wrap.js-fullheight {
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+}
+
+h1{
+    color: #fff;
+    line-height: 1.2;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+/* Peguei do bootstrap pra mudar aqui */
+.btn-primary {
+  --bs-btn-bg: #1a6904;
+  --bs-btn-border-color: #114b02;
+  --bs-btn-hover-bg: #229203;
+  --bs-btn-hover-border-color: #229203;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-bg: #229203;
+  --bs-btn-active-border-color: #229203;
+  --bs-btn-disabled-bg: #1a6904;
+  --bs-btn-disabled-border-color: #1a6904;
+}

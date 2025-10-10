@@ -1,0 +1,17 @@
+.hero-wrap-comeco{
+    height: 40vh;
+    min-height: 100px;
+    
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    display: flex;
+    align-items: flex-end;
+    background-color: #759f69;
+    background-attachment: fixed
+}
+
+footer{
+    padding: 7em 0;
+
+}

@@ -17,7 +17,7 @@ export default function NavBar(){
         id="ftco-navbar"
         >
         <div className="container container-nav">
-            <a className="navbar-brand" href="index.html">
+            <Link to="/" className="navbar-brand" >  
             <img
                 src={PetDaMontanhaLogo}
                 alt="Logo Pet da Montanha"
@@ -25,7 +25,7 @@ export default function NavBar(){
                 style={{ width: 40, height: 40, verticalAlign: "-4px"}}
             />
             
-            </a>
+            </Link>
             <button
             className="navbar-toggler"
             type="button"
