@@ -84,8 +84,8 @@ export default function Sobre(){
                 <p />
                 <p>Email: </p>
                 <p>
-                    <a href="mailto: lambdacrecheveterinaria@gmail.com">
-                    lambdacrecheveterinaria@gmail.com
+                    <a href="mailto: petdamontanha.joa@gmail.com">
+                    petdamontanha.joa@gmail.com
                     </a>
                 </p>
                 <p />

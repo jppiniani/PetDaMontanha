@@ -33,17 +33,13 @@ export default function Inicio(){
         </div>
         </div>
 
-        <h1>Início</h1>
-        <p>Testezão top</p>
+       
 
-        {/* Elfsight Google Reviews | Untitled Google Reviews */}
-        <div>
-            <script async src="https://elfsightcdn.com/platform.js" />
-            <div
-                className="elfsight-app-460d81af-6ecf-45b4-b09c-da7ed695db2b"
-                data-elfsight-app-lazy=""
-            />
-        </div>
+        
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-aab09656-a86c-4120-91d0-c5dc8ed705d5" data-elfsight-app-lazy></div>
+
+
         </>
     )
 }

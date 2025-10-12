@@ -18,8 +18,9 @@ export default function Footer (){
                     data-toggle="tooltip"
                     data-placement="top"
                     title="Instagram"
+                    
                     >
-                    <span className="fa fa-instagram" style={{color: 'black'}} />
+                    <span className="fa fa-instagram" style={{color: 'white'}} />
                     </a>
                 </li>
                 </ul>
@@ -60,33 +61,31 @@ export default function Footer (){
                 <h2 className="footer-heading">Alguma Dúvida?</h2>
                 <div className="block-23 mb-3">
                 <ul className='list-unstyled'>
+
+
                     <li>
+                    <a href="https://www.google.com/maps/place/PET+DA+MONTANHA+Hotel+e+Veterin%C3%A1ria/data=!4m2!3m1!1s0x0:0x4b476edcf9d82e5?sa=X&ved=1t:2428&ictx=111&cshid=1759434184470773">   
                     <span className="icon fa fa-map"/>
-                    <span className="text">
-                        <a href="https://www.google.com/maps/place/PET+DA+MONTANHA+Hotel+e+Veterin%C3%A1ria/data=!4m2!3m1!1s0x0:0x4b476edcf9d82e5?sa=X&ved=1t:2428&ictx=111&cshid=1759434184470773">
-                            R. Leovigildo Lourenço da Cunha, 90 - Centro, Joanópolis - SP, 12980-000
-                        </a>
-                    </span>
+                    <span className="text"> R. Leovigildo Lourenço da Cunha, 90 - Centro, Joanópolis - SP, 12980-000</span>
+                    </a> 
                     </li>
+
+
                     <li>
                     <a href="https://wa.me/+5511944926547" className="py-2 d-block" > {/*essa classe me deixou separar melhor cada elemento*/}
                         <span className="icon fa fa-phone" />
-                        (11) 94492-6547
+                        <span className="text"> (11) 944926547</span> 
                     </a>
                     </li>
 
-                    {/* Preciso resgatar o email
 
                     <li>
-                    <a
-                        href="mailto:lambdacrecheveterinaria@gmail.com"
-                        style={{ display: "flex", alignItems: "center" }}
-                    >
+                    <a href="mailto:petdamontanha.joa@gmail.com" >
                         <span className="icon fa fa-paper-plane" />
-                        <span className="text">lambdacrecheveterinaria@gmail.com</span> 
+                        <span className="text">petdamontanha.joa@gmail.com</span> 
                     </a>
-                    </li> */}
-                    
+                    </li> 
+
 
                 </ul>
                 </div>

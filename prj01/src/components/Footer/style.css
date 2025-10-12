@@ -2,46 +2,42 @@
     background: #c79a69;
 }
 .footer p {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 .footer .footer-heading {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .footer ul.list-unstyled li a {
-    color: rgb(0, 0, 0);
-    
+    color: rgb(255, 255, 255);
 }
 
 
-.footer ul.list-unstyled li a:hover {
+.footer ul.list-unstyled li :hover {
   color: #53714b;
-  
-  
 }
 
 
 .footer .block-23 ul li a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 
 .block-23 ul li span {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-left: 5px;
 }
 
 .footer .block-23 ul li .icon {
-    color: rgb(0, 0, 0);
-    margin-right: 0px;
-    
+    color: rgb(255, 255, 255);
+    margin-right: 0px;   
 }
 
 
 .linkColorlib 
 {
-    color : black;
+    color : rgb(255, 255, 255);
 }
 
 .linkColorlib:hover
