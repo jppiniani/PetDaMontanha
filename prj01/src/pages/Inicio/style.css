@@ -47,3 +47,8 @@ h1{
   --bs-btn-disabled-border-color: #1a6904;
 }
 
+.feedback{
+    padding: 4rem;
+    padding-top: 30px;
+}
+

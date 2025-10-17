@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import './style.css'
 
-import PetDaMontanhaLogo from '../../assets/images/PetDaMontanhaLogo.png'
+import PetDaMontanhaLogo from '../../assets/images/PetDaMontanhaLogo2.png'
 
 
 export default function NavBar(){
