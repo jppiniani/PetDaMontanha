@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
+import Card from '../../components/Card'
 import LogoDesfoqueEscuro from '../../assets/images/LogoDesfoqueEscuro.jpg'
+import { FaDog, FaCat, FaShower } from 'react-icons/fa';
 import './style.css'
 
 export default function Inicio(){
@@ -34,12 +36,32 @@ export default function Inicio(){
         </div>
         </div>
 
-       
+       <section className="ftco-section ftco-no-pt ftco-intro">
+            <div className="container">
+                <div className="row" >
+                    <Card 
+                    icone = {FaDog}
+                    titulo = 'Equilíbrio Canino'
+                    texto = 'Brincadeiras e adestramento saudável e divertido para cães, com participação dos tutores e foco no bem-estar animal.'
+                    />
+                    <Card
+                    icone = {FaCat}
+                    titulo = 'Hospedagem e cuidados diários para pets'
+                    texto = 'Oferecemos creche durante o dia e hospedagem completa para pets, com todo o conforto, segurança e carinho que eles merecem.'
+                    />
+                    <Card 
+                    icone = {FaShower}
+                    titulo = 'Cuidados com higiene'
+                    texto = 'Oferecemos serviços de banho, tosa e cuidados estéticos para pets, garantindo higiene, conforto e beleza para seu melhor amigo.'
+                    />
+                </div>
+            </div>
+        </section>
 
-<section className='feedback'>    
-    <script src="https://elfsightcdn.com/platform.js" async></script>
-    <div class="elfsight-app-aab09656-a86c-4120-91d0-c5dc8ed705d5" data-elfsight-app-lazy></div>
-</section>
+        <section className='feedback'>    
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-aab09656-a86c-4120-91d0-c5dc8ed705d5" data-elfsight-app-lazy></div>
+        </section>
 
         </>
     )
