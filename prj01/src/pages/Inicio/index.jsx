@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import LogoDesfoque from '../../assets/images/LogoDesfoque.png'
+import LogoDesfoqueEscuro from '../../assets/images/LogoDesfoqueEscuro.jpg'
 import './style.css'
 
 export default function Inicio(){
@@ -7,11 +7,12 @@ export default function Inicio(){
         <>
         <div
         className="hero-wrap js-fullheight hero-wrap-custom"
-        style={{ backgroundImage: `url(${LogoDesfoque})` }}
+        style={{ backgroundImage: `url(${LogoDesfoqueEscuro})`}}
         data-stellar-background-ratio="0.5"
         >
         <div className="overlay" />
         <div className="container">
+            
             <div
             className="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
             data-scrollax-parent="true"
@@ -35,10 +36,10 @@ export default function Inicio(){
 
        
 
-        
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-aab09656-a86c-4120-91d0-c5dc8ed705d5" data-elfsight-app-lazy></div>
-
+<section className='feedback'>    
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-aab09656-a86c-4120-91d0-c5dc8ed705d5" data-elfsight-app-lazy></div>
+</section>
 
         </>
     )

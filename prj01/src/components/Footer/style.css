@@ -1,5 +1,6 @@
 .footer{
-    background: #c79a69;
+    background: #966631 /*#c79a69*/;
+    padding-block: 35px;
 }
 .footer p {
     color: rgb(255, 255, 255) !important;
@@ -43,4 +44,9 @@
 .linkColorlib:hover
 {
     color : #53714b;
+}
+
+.copyright{
+    margin-top: 25px;
+    margin-bottom: 5px;
 }

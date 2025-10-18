@@ -25,10 +25,11 @@ export default function Sobre(){
                 <h2 className="sobre1">Conheça a nossa história</h2>
                 </bold>
                 <h4 className="sobre2">Quem somos?</h4>
-                <p>
+                <p className="texto1">
                 Pioneiros de Joanópolis.
                 </p>
-                <p>
+                <div className = "boardTexto">
+                <p className="texto1">
                 Hotel de cachorro e gato, será? <br />
                 Pois é, a ideia inovadora de nossas vidas veio ao decorrer do segundo ano da pandemia, em 2020. Eu já formada em veterinária há 2 anos, com um bebê de meses, 
                 meu marido sem emprego, precisávamos de alguma coisa. Começamos a hospedar em nossa casa, e eu atendia a domicílio. Mas a procura de hospedagem pet começou a 
@@ -36,11 +37,12 @@ export default function Sobre(){
                 arquiteta e pensamos em cada detalhe para os pets terem conforto e uma experiência maravilhosa. E assim cresceu o Pet da Montanha - Hotel e Veterinária, na 
                 cidade de Joanópolis, nossa Joia da Mantiqueira, terra do Lobisomem, com muitas cachoeiras e seus encantos naturais.
                 </p>
+                </div>
                 <h4 className="sobre3">Por que nos escolher?</h4>
-                <p>
+                <p className="texto1">
                 Possuímos diversos serviços que serão úteis e agradáveis para seu dog:
                 </p>
-                <ul>
+                <ul className="texto1">
                 <li> Prezamos pela saúde do seu cão</li>
                 <li> Cuidado veterinário de confiança</li>
                 <li> Atendimento ao Cliente Especializado</li>

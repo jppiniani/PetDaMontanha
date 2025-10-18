@@ -1,9 +1,9 @@
 .navbar{
-    background: #c79a69 !important;
+    background: #966631 /*#c79a69*/ !important;
 }
 
 .navbar-nav > .nav-item.active > a {
-    color: #1a6904 !important;
+    color: #91c582 /*#1a6904*/ !important;
 }
 
 .navbar-nav > .nav-item.active > a:before {
@@ -35,9 +35,12 @@
 }
 
 .btn-login:hover {
-    background-color: #91c582;
+    background-color: #229203;
+    color:white;
 }
 
 .nav-item.active > .btn-login:before{
     color:white;
 }
+
+
