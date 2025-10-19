@@ -1,7 +1,8 @@
+import ImagemComecoPagina from "../../components/ImagemComecoPagina";
 export default function Contato(){
     return(
         <>
-        <h1>Contato</h1>
+        <ImagemComecoPagina titulo="Contato" />
         </>
     )
 }

@@ -1,7 +1,7 @@
-import Fundo from '../../assets/images/Fundo.png'
+import Fundo from '../../assets/images/FundoDesfoque.jpg'
 import './style.css'
 
-export default function ImagemComecoPagina(){
+export default function ImagemComecoPagina({ titulo }){ /*PROPS É DIIIMAIS*/
     return(
         <section
         className="hero-wrap hero-wrap-2 hero-wrap-comeco"
@@ -12,7 +12,7 @@ export default function ImagemComecoPagina(){
         <div className="container">
             <div className="row no-gutters slider-text align-items-end">
             <div className="col-md-9 ftco-animate pb-5">
-                <h1 className="mb-0 bread">Sobre Nós</h1>
+                <h1 className="mb-0 bread">{titulo}</h1>
             </div>
             </div>
         </div>

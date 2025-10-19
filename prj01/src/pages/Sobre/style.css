@@ -4,28 +4,28 @@
     margin-top: 7px;
     position: static;
     transform: translateY(20px);
-    animation: slideIn 1s forwards;
+    animation: slideIn 1.4s forwards;
 }
 
 .img-fluid1 {
-    max-width: 90%;
+    max-width: 98%;
     height: auto;
     margin-top: 23px;
-    position: static;
+    
 }
 
 .img-fluid2 {
-    max-width: 90%;
+    max-width: 98%;
     height: auto;
     margin-top: 23px;
-    position: static;
+    
 }
 
 .img-fluid3 {
-    max-width: 90%;
+    max-width: 98%;
     height: auto;
     margin-top: 23px;
-    position: static;
+    
 }
 
 .ftco-section{
@@ -43,8 +43,13 @@
     position: relative;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
     list-style: none;
+}
+
+.titulo-secao
+{
+    color: white;
 }
 
 a {
@@ -65,21 +70,60 @@ a {
 
 .sobre1 {
     color: white;
+    margin-bottom: 20px;
 }
 .sobre2 {
     color: white;
+    margin-bottom: 20px;
+
 }
 
 .sobre3 {
     color:white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
 }
 .texto1 {
     color: #ffffffff;
+    
 }
 
 .boardTexto 
 {
     background-color: #6B9160 !important;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 0.5rem;
 }
+
+.boardTexto2
+{
+    background-color: #6B9160 !important;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom : 10px;
+    display: inline-block;
+}
+
+.servicos 
+{
+    color:white;
+}
+
+.servicos:hover 
+{
+    color:#91c582
+}
+
+
+
+.mr-2 
+{
+    color:white;
+}
+
+.mr-2:hover
+{
+    color:#91c582;
+}
+

@@ -62,7 +62,7 @@ export default function NavBar(){
                 </li>
                 <li className={pathname === "/fotos" ? "nav-item active" : "nav-item"}>
                     <Link to="/fotos" className="nav-link">
-                        Fotos
+                        Galeria
                     </Link>
                 </li>
                 <li className={pathname === "/padaria" ? "nav-item active" : "nav-item"}>

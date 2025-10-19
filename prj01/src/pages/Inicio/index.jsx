@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import Card from '../../components/Card'
 import LogoDesfoqueEscuro from '../../assets/images/LogoDesfoqueEscuro.jpg'
-import { FaDog, FaCat, FaShower } from 'react-icons/fa';
+import { GiDogHouse } from "react-icons/gi";
+import { CiPill } from "react-icons/ci";
+import { MdOutlineLocalHospital } from "react-icons/md";
 import './style.css'
 
 export default function Inicio(){
@@ -40,19 +42,19 @@ export default function Inicio(){
             <div className="container">
                 <div className="row" >
                     <Card 
-                    icone = {FaDog}
-                    titulo = 'Equilíbrio Canino'
-                    texto = 'Brincadeiras e adestramento saudável e divertido para cães, com participação dos tutores e foco no bem-estar animal.'
+                    icone = {GiDogHouse}
+                    titulo = 'Hotel e Veterinária'
+                    texto = 'Nossas instalações foram projetadas pensando no conforto e bem-estar dos animais. Temos espaços amplos e seguros para que seu pet se sinta em casa durante a estadia conosco. Venha nos visitar e conhecer nosso espaço.'
                     />
                     <Card
-                    icone = {FaCat}
-                    titulo = 'Hospedagem e cuidados diários para pets'
-                    texto = 'Oferecemos creche durante o dia e hospedagem completa para pets, com todo o conforto, segurança e carinho que eles merecem.'
+                    icone = {MdOutlineLocalHospital}
+                    titulo = 'Cuidados Veterinários'
+                    texto = 'Oferecemos cuidados veterinários como avaliações médicas, banho e tosa e ozonioterapia.'
                     />
                     <Card 
-                    icone = {FaShower}
-                    titulo = 'Cuidados com higiene'
-                    texto = 'Oferecemos serviços de banho, tosa e cuidados estéticos para pets, garantindo higiene, conforto e beleza para seu melhor amigo.'
+                    icone = {CiPill}
+                    titulo = 'Farmácia e Padaria Pet'
+                    texto = 'Em nosso espaço, o cliente poderá pedir '
                     />
                 </div>
             </div>

@@ -11,19 +11,17 @@ export default function Footer (){
             <div className="col-md-6 col-lg-3 mb-4 mb-md-0">
                 <h2 className="footer-heading">Pet da Montanha</h2>
                 <p>Hotel e Veterinária</p>
+
                 <ul className="list-unstyled">
-                 <li > {/*className="ftco-animate" -> essa className tava dando erro, eu acho q quando a página estiver completa da pra adicionar ela denovo*/}
+                 <li>
                     <a
                     href="https://www.instagram.com/petdamontanha/"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="Instagram"
-                    
                     >
-                    <span className="fa fa-instagram" style={{color: 'white'}} />
+                    <span className="fa fa-instagram"/>
                     </a>
                 </li>
                 </ul>
+
             </div>
             <div className="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
                 <h2 className="footer-heading">Navegação Rápida</h2>
@@ -66,20 +64,20 @@ export default function Footer (){
                     <li>
                     <a href="https://www.google.com/maps/place/PET+DA+MONTANHA+Hotel+e+Veterin%C3%A1ria/data=!4m2!3m1!1s0x0:0x4b476edcf9d82e5?sa=X&ved=1t:2428&ictx=111&cshid=1759434184470773">   
                     <span className="icon fa fa-map"/>
-                    <span className="text"> R. Leovigildo Lourenço da Cunha, 90 - Centro, Joanópolis - SP, 12980-000</span>
+                    <span className="text">R. Leovigildo Lourenço da Cunha, 90 - Centro, Joanópolis - SP, 12980-000</span>
                     </a> 
                     </li>
 
 
-                    <li>
-                    <a href="https://wa.me/+5511944926547" className="py-2 d-block" > {/*essa classe me deixou separar melhor cada elemento*/}
+                    <li className = "listaParaEspacamento">
+                    <a href="https://wa.me/+5511944926547">
                         <span className="icon fa fa-phone" />
-                        <span className="text"> (11) 944926547</span> 
+                        <span className="text">(11) 944926547</span> 
                     </a>
                     </li>
 
 
-                    <li>
+                    <li className="listaParaEspacamento">
                     <a href="mailto:petdamontanha.joa@gmail.com" >
                         <span className="icon fa fa-paper-plane" />
                         <span className="text">petdamontanha.joa@gmail.com</span> 
@@ -106,33 +104,6 @@ export default function Footer (){
             </div>
         </div>
         </footer>
-
-            {/* <div>
-                <h2>Lambda</h2>
-                <p>A creche veterinária onde cada lambida é um gesto de carinho!</p>
-            </div>
-            
-            <div>
-                <h2>Navegação Rápida</h2>
-                <ul>
-                    <li>Início</li>
-                    <li>Sobre</li>
-                    <li>Serviços</li>
-                    <li>Planos</li>
-                    <li>Contato</li>
-                    <li>Mini-Game</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Alguma Dúvida?</h2>
-                <div>
-                    <ul>
-                        <li>Rua Falsa Lambida 203, Bragança Paulista, São Paulo</li>
-                        <li>+55 11 97226-6937</li>
-                        <li>lambdacrecheveterinaria@gmail.com</li>
-                    </ul>
-                </div>
-            </div> */}
         </>
     )
 }

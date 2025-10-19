@@ -1,7 +1,8 @@
+import ImagemComecoPagina from "../../components/ImagemComecoPagina";
 export default function Fotos(){
     return(
         <>
-        <h1>Galeria</h1>
+        <ImagemComecoPagina titulo="Galeria" />
         </>
     )
 }

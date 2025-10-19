@@ -1,7 +1,8 @@
+import ImagemComecoPagina from "../../components/ImagemComecoPagina";
 export default function Entrar(){
     return(
         <>
-        <h1>Entrar</h1>
+        <ImagemComecoPagina titulo="Acesso do Usuário" />
         </>
     )
 }

@@ -1,7 +1,10 @@
+import ImagemComecoPagina from "../../components/ImagemComecoPagina";
+
 export default function Funcionarios(){
     return(
         <>
-        <h1>Funcionários</h1>
+         <ImagemComecoPagina titulo="Funcionários" />
+        
         </>
     )
 }
