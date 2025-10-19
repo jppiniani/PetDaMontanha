@@ -1,18 +1,11 @@
-import { cards } from '../../assets/images/tabelas';
-import { Link } from 'react-router-dom';
-import './style.css';
+import './style.css'
 
-export default function Card({ id }) {
+export default function Card(props){
 
-    const cardData = cards.find(card => card.id === id);
-
-    if (!cardData) {
-        return null;
-    }
-
-    const IconeComponente = cardData.icone;
-
-    return (
+    const IconeComponente = props.icone;
+    
+    return(
+        <>
         <div className="col-md-4 d-flex align-self-stretch px-4 ftco-animate">
             <div className="d-block services text-center custom-card">
                 <div className="icon-circle">
@@ -21,19 +14,19 @@ export default function Card({ id }) {
 
                 <div className="media-body">
                     <div className="text-content">
-                        <h3 className="heading">{cardData.titulo}</h3>
-                        <p>{cardData.texto}</p>
+                        <h3 className="heading">{props.titulo}</h3>
+                        <p>{props.texto}</p>
                     </div>
 
-                    <Link
+                    <a
                         className="btn-custom d-flex align-items-center justify-content-center"
-                        to="/servicos" // AQUI ESTÁ A MUDANÇA
+                        href="services.html"
                     >
                         <span className="fa fa-chevron-right"></span>
-                    </Link>
-                        
+                    </a>
                 </div>
             </div>
         </div>
-    );
+        </>
+    )
 }

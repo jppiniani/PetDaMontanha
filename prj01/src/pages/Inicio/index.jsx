@@ -1,9 +1,6 @@
 import { Link } from 'react-router-dom'
 import Card from '../../components/Card'
 import LogoDesfoqueEscuro from '../../assets/images/LogoDesfoqueEscuro.jpg'
-import { GiDogHouse } from "react-icons/gi";
-import { CiPill } from "react-icons/ci";
-import { MdOutlineLocalHospital } from "react-icons/md";
 import './style.css'
 
 export default function Inicio(){
@@ -41,21 +38,9 @@ export default function Inicio(){
        <section className="ftco-section ftco-no-pt ftco-intro">
             <div className="container">
                 <div className="row" >
-                    <Card 
-                    icone = {GiDogHouse}
-                    titulo = 'Hotel e Veterinária'
-                    texto = 'Nossas instalações foram projetadas pensando no conforto e bem-estar dos animais. Temos espaços amplos e seguros para que seu pet se sinta em casa durante a estadia conosco. Venha nos visitar e conhecer nosso espaço.'
-                    />
-                    <Card
-                    icone = {MdOutlineLocalHospital}
-                    titulo = 'Cuidados Veterinários'
-                    texto = 'Oferecemos cuidados veterinários como avaliações médicas, banho e tosa e ozonioterapia.'
-                    />
-                    <Card 
-                    icone = {CiPill}
-                    titulo = 'Farmácia e Padaria Pet'
-                    texto = 'Em nosso espaço, o cliente poderá pedir '
-                    />
+                    <Card id={1} />
+                    <Card id={2} />
+                    <Card id={3} />
                 </div>
             </div>
         </section>
