@@ -13,11 +13,11 @@ import App from './App.jsx';
 // Importação das páginas
 import Inicio from './pages/Inicio/index.jsx';
 import Sobre from './pages/Sobre/index.jsx'
-import Funcionarios from './pages/funcionarios/index.jsx';
-import Servicos from './pages/servicos/index.jsx';
-import Fotos from './pages/fotos/index.jsx';
+import Funcionarios from './pages/Funcionarios/index.jsx';
+import Servicos from './pages/Servicos/index.jsx';
+import Fotos from './pages/Fotos/index.jsx';
 import Padaria from './pages/Padaria/index.jsx';
-import Contato from './pages/contato/index.jsx';
+import Contato from './pages/Contato/index.jsx';
 import Entrar from './pages/Entrar/index.jsx';
 
 const router = createBrowserRouter([
