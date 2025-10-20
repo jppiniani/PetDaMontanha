@@ -1,4 +1,4 @@
-import { cards } from '../../assets/images/tabelas';
+import { cards } from '../../assets/tabelas';
 import { Link } from 'react-router-dom';
 import './style.css';
 

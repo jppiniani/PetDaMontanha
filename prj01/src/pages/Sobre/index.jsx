@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ImagemComecoPagina from "../../components/ImagemComecoPagina";
 import PetDaMontanhaLogo from '../../assets/images/PetDaMontanhaLogo.png';
 import Cachorro1 from '../../assets/images/Cachorro1.png'
@@ -56,27 +57,28 @@ export default function Sobre(){
                 <img src={PetDaMontanhaMesa} alt="" className="img-fluid" />
                 </p>
             </div>{" "}
-            {/* .col-md-8 */}
             <div className="col-lg-4 sidebar pl-lg-5 ftco-animate">
                 <div className="sidebar-box ftco-animate">
-                <div className="categories">
-                    <h3 className="titulo-secao">Serviços</h3>
-                    <li>
-                    <a href="services.html#petFeliz" className ="servicos">
-                        Hotel e Veterinária <span className="fa fa-chevron-right" />
-                    </a>
-                    </li>
-                    <li>
-                    <a href="services.html#petShow" className ="servicos">
-                        Cuidados Veterinários <span className="fa fa-chevron-right" />
-                    </a>
-                    </li>
-                    <li>
-                    <a href="services.html#petPremium" className ="servicos">
-                        Farmácia e Padaria Pet <span className="fa fa-chevron-right" />
-                    </a>
-                    </li>
-                </div>
+                    <div className="categories">
+                        <h3 className="titulo-secao">Serviços</h3>
+                        <ul className="servicos"> 
+                            <li>
+                                <Link to="/servicos" className="servicos">
+                                    Hotel e Veterinária <span className="fa fa-chevron-right" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/servicos" className="servicos">
+                                    Cuidados Veterinários <span className="fa fa-chevron-right" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/servicos" className="servicos">
+                                    Farmácia e Padaria Pet <span className="fa fa-chevron-right" />
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="sidebar-box ftco-animate">
                 <h3 className="titulo-secao">Contato</h3>
