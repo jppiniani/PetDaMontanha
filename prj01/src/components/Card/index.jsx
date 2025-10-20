@@ -27,7 +27,7 @@ export default function Card({ id }) {
 
                     <Link
                         className="btn-custom d-flex align-items-center justify-content-center"
-                        to="/servicos" // AQUI ESTÁ A MUDANÇA
+                        to="/servicos"
                     >
                         <span className="fa fa-chevron-right"></span>
                     </Link>
