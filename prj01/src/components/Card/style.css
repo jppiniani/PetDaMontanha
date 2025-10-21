@@ -3,7 +3,7 @@
     --primary-green: #5a8d63;
     --light-green: #bbf1c6;
     --dark-green: #44694b;
-    --card-bg: #61976b;
+    --card-bg: #6B9160 /*#61976b*/;
     --text-heading: #ffffff;
     --text-body: #f0f0f0;
 }
@@ -47,7 +47,7 @@
 
 .icon-circle svg {
     font-size: 40px;
-    color: var(--primary-green);
+    color: var(--dark-green /*--primary-green*/);
 }
 
 .custom-card .heading {
@@ -65,7 +65,7 @@
 }
 
 .btn-custom {
-    background: var(--primary-green);
+    background: var(--dark-green);
     color: #ffffff;
     border-radius: 50%;
     width: 50px;
@@ -74,10 +74,11 @@
     transition: background-color 0.3s ease;
     margin: 20px auto 0;
     flex-shrink: 0;
+    text-decoration: none;
 }
 
 .btn-custom:hover {
-    background: var(--dark-green);
-    color: #fff;
+    background: var(--light-green);
+    color: var(--dark-green);
 }
 

@@ -15,7 +15,7 @@ export default function Sobre(){
         <div className="container">
             <div className="row">
             <div className="col-lg-8 ftco-animate">
-                <p>
+                <p className="img-logo">
                 <img
                     src={PetDaMontanhaLogo}
                     alt="Logo Pet da Montanha"
