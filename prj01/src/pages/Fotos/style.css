@@ -6,3 +6,21 @@
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+
+.instagram{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+p{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
