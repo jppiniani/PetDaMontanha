@@ -1,0 +1,56 @@
+.carousel-img-fixed {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background-color: #6b9160;
+  width: 100%;
+}
+
+.Carrossel {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  border-radius: 10px;
+  overflow: hidden; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  transition: max-width 0.3s ease-in-out;
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+  .Carrossel {
+    max-width: 95%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .carousel-img-fixed {
+    aspect-ratio: 1 / 1; 
+  }
+  
+  .carousel-caption p {
+    display: none;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.1rem;
+  }
+
+  .carousel-caption {
+    padding-top: 0;
+    padding-bottom: 0.5rem; 
+    bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Carrossel {
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 0;
+  }
+}

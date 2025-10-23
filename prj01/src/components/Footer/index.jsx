@@ -42,6 +42,11 @@ export default function Footer (){
                         </Link>
                     </li>
                     <li>
+                        <Link to="/fotos" className="py-2 d-block">
+                            Galeria
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/planos" className="py-2 d-block">
                             Planos
                         </Link>

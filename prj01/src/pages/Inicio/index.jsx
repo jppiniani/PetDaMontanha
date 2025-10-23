@@ -47,7 +47,7 @@ export default function Inicio(){
 
         <section className='feedback'>    
             <script src="https://elfsightcdn.com/platform.js" async></script>
-            <div class="elfsight-app-aab09656-a86c-4120-91d0-c5dc8ed705d5" data-elfsight-app-lazy></div>
+            <div className="elfsight-app-aab09656-a86c-4120-91d0-c5dc8ed705d5" data-elfsight-app-lazy></div>
         </section>
 
         </>

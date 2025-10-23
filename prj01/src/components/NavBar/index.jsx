@@ -1,90 +1,65 @@
 import { Link, useLocation } from 'react-router-dom';
+import { Navbar, Nav, Container } from 'react-bootstrap'; // <-- IMPORTAÇÕES NOVAS
+import './style.css';
+import PetDaMontanhaLogo from '../../assets/images/PetDaMontanhaLogo2.png';
 
-import './style.css'
-
-import PetDaMontanhaLogo from '../../assets/images/PetDaMontanhaLogo2.png'
-
-
-export default function NavBar(){
-
+export default function NavBar() {
     const location = useLocation();
     const { pathname } = location;
 
-    return(
-        <>
-        <nav
-        className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
-        id="ftco-navbar"
+    return (
+        <Navbar 
+            expand="lg" 
+            className="navbar-dark ftco_navbar bg-dark ftco-navbar-light" 
+            id="ftco-navbar"
         >
-        <div className="container container-nav">
-            <Link to="/" className="navbar-brand" >  
-            <img
-                src={PetDaMontanhaLogo}
-                alt="Logo Pet da Montanha"
-                className="mr-2"
-                style={{ width: 40, height: 40, verticalAlign: "-4px"}}
-            />
-            
-            </Link>
-            <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#ftco-nav"
-            aria-controls="ftco-nav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span className="fa fa-bars" /> Menu
-            </button>
-            <div className="collapse navbar-collapse" id="ftco-nav">
-            <ul className="navbar-nav ml-auto">
-                <li className={pathname === "/" ? "nav-item active" : "nav-item"}>
-                    <Link to="/" className="nav-link">
-                        Início
-                    </Link>
-                </li>
+            <Container fluid className="container-nav">
+                
+                <Navbar.Brand as={Link} to="/">
+                    <img
+                        src={PetDaMontanhaLogo}
+                        alt="Logo Pet da Montanha"
+                        className="mr-2"
+                        style={{ width: 40, height: 40, verticalAlign: "-4px", marginLeft: 15}}
+                    />
+                </Navbar.Brand>
 
-                <li className={pathname === "/sobre" ? "nav-item active" : "nav-item"}>
-                    <Link to="/sobre" className="nav-link">
-                        Sobre
-                    </Link>
-                </li>
-                <li className={pathname === "/funcionarios" ? "nav-item active" : "nav-item"}>
-                    <Link to="/funcionarios" className="nav-link">
-                        Funcionários
-                    </Link>
-                </li>
-                <li className={pathname === "/servicos" ? "nav-item active" : "nav-item"}>
-                    <Link to="/servicos" className="nav-link">
-                        Serviços
-                    </Link>
-                </li>
-                <li className={pathname === "/fotos" ? "nav-item active" : "nav-item"}>
-                    <Link to="/fotos" className="nav-link">
-                        Galeria
-                    </Link>
-                </li>
-                <li className={pathname === "/padaria" ? "nav-item active" : "nav-item"}>
-                    <Link to="/padaria" className="nav-link">
-                        Padaria PET
-                    </Link>
-                </li>
-                <li className={pathname === "/contato" ? "nav-item active" : "nav-item"}>
-                    <Link to="/contato" className="nav-link">
-                        Contato
-                    </Link>
-                </li>
-                <li className={pathname === "/entrar" ? "nav-item active-btn" : "nav-item"} style={{position: 'absolute', right:'100px'}}>
-                    <Link to="/entrar" className="btn btn-login" >
-                        Entrar
-                    </Link>
-                </li>
-            </ul>
-            </div>
-        </div>
-        </nav>
+                <Navbar.Toggle aria-controls="ftco-nav" />
 
-        </>
-    )
+                <Navbar.Collapse id="ftco-nav">
+                    
+                    <Nav>
+                        <Nav.Link as={Link} to="/" active={pathname === "/"}>
+                            Início
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/sobre" active={pathname === "/sobre"}>
+                            Sobre
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/funcionarios" active={pathname === "/funcionarios"}>
+                            Funcionários
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/servicos" active={pathname === "/servicos"}>
+                            Serviços
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/fotos" active={pathname === "/fotos"}>
+                            Galeria
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/padaria" active={pathname === "/padaria"}>
+                            Padaria PET
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/contato" active={pathname === "/contato"}>
+                            Contato
+                        </Nav.Link>
+                    </Nav>
+
+                    <Nav className="nav-botao-entrar"> 
+                        <Nav.Link as={Link} to="/entrar" className="btn btn-login">
+                            Entrar
+                        </Nav.Link>
+                    </Nav>
+                    
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
 }

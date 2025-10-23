@@ -1,1 +1,8 @@
 /* Eu fiz esses arquivos css em pastas para caso haja alguma alteração específica no css para não ficar mexendo no bootstrap */
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

@@ -2,11 +2,11 @@
     background: #966631 /*#c79a69*/ !important;
 }
 
-.navbar-nav > .nav-item.active > a {
-    color: #91c582 /*#1a6904*/ !important;
+.navbar-nav .nav-link.active {
+    color: #91c582 !important;
 }
 
-.navbar-nav > .nav-item.active > a:before {
+.navbar-nav .nav-link.active:before {
     background-color: #1a6904 !important;
 }
 
@@ -22,16 +22,15 @@
 }
 
 /* css da navbar  */
-.container-nav{
-    margin-inline-start: 5px;
-    
+.container-nav {
+  padding-inline-start: 5px;
 }
 
 /* css do botão de login */
 .btn-login{
     color:white;
     background-color: #1a6904;
-    padding-inline: 20px;
+    width: 5rem;
 }
 
 .btn-login:hover {
@@ -43,4 +42,49 @@
     color:white;
 }
 
+@media (min-width: 992px) { 
+  .nav-botao-entrar {
+    margin-left: auto !important;
+  }
+}
 
+@media (max-width: 991.98px) {
+  .nav-botao-entrar .nav-link {
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #ftco-nav > .nav:first-child .nav-link {
+    border-bottom: 1px solid #91c582; 
+    margin-inline: 0;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+}
+
+/*Responsividade mobile*/
+/* @media (max-width: 991.98px) {
+
+.nav-botao-entrar .nav-link {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#ftco-nav > .nav:first-child .nav-link {
+    border-bottom: 1px solid #91c582; 
+    margin-inline: 0;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+#ftco-nav > .nav:first-child .nav-link.active {
+    color: #91c582 !important;
+}
+
+#ftco-nav > .nav:first-child .nav-link:last-of-type {
+    border-bottom: none;
+}
+
+} */
