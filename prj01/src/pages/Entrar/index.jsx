@@ -14,22 +14,22 @@ export default function Entrar(){
 
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Label>Endereço de e-mail</Form.Label>
+                            <Form.Control type="email" placeholder="Digite seu e-mail" />
                             <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
+                            Nós nunca compartilharemos seu dados.
                             </Form.Text>
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
+                            <Form.Label>Senha</Form.Label>
                             <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Check me out" />
+                            <Form.Check type="checkbox" label="Lembrar da senha" />
                         </Form.Group>
                         <Button variant="primary" type="submit">
-                            Submit
+                            Acessar
                         </Button>
                     </Form>
                 </Col>

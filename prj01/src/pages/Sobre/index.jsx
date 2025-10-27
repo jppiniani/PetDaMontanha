@@ -82,7 +82,7 @@ export default function Sobre(){
                 </div>
                 <div className="sidebar-box ftco-animate">
                 <h3 className="titulo-secao">Contato</h3>
-                <p className="titulo-secao">Telefone:</p>
+                <p className="titulo-secao">Telefone :</p>
                 <p>
                     <a href="https://wa.me/+5511944926547"className="mr-2">
                     <span className="fa fa-phone mr-1" />
@@ -90,8 +90,7 @@ export default function Sobre(){
                     </a>
                 </p>
                 <p />
-                <p className="titulo-secao">Email: </p>
-
+                <p className="titulo-secao">Email : </p>
                 <p>
                     <a href="mailto: petdamontanha.joa@gmail.com" className="mr-2">
                     petdamontanha.joa@gmail.com
@@ -106,7 +105,6 @@ export default function Sobre(){
             </div>
         </div>
         </section>
-
         </>
     )
 }

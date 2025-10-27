@@ -50,11 +50,13 @@
 .titulo-secao
 {
     color: white;
+    
 }
 
 a {
     color: #1a6949;
     text-decoration: underline;
+    
 }
 
 @keyframes slideIn {
@@ -136,4 +138,25 @@ a {
 .img-logo{
     display:flex;
     justify-content:center;
+}
+
+.boardTexto5 /*Esse boardTexto5 é para a parte contato. Até tentei importar o css do próprio contato porém não tava indo. Pelo visto, esse arquivo css do sobre funciona para todas as páginas kkkk*/
+{
+    background-color: #6B9160 !important;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom : 2rem;
+    margin-top: 2rem;
+    display: inline-block;
+    margin-left: 790px;
+}
+
+.boardMap 
+{
+    background-color: #6B9160 !important;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-bottom : 2rem;
+    margin-top: 2rem;
+    
 }

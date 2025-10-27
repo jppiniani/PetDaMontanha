@@ -1,5 +1,5 @@
 import { GiDogHouse } from "react-icons/gi";
-import { CiPill } from "react-icons/ci";
+import { LuBone } from "react-icons/lu";
 import { MdOutlineLocalHospital } from "react-icons/md";
 
 export const cards = [
@@ -13,12 +13,15 @@ export const cards = [
         id: 2,
         icone: MdOutlineLocalHospital,
         titulo: 'Cuidados Veterinários',
-        texto: 'Oferecemos cuidados veterinários como avaliações médicas, banho e tosa e ozonioterapia.' ,
+        texto: 'Oferecemos cuidados veterinários como avaliações médicas, banho e tosa e ozonioterapia. Também atendemos em domicílio.' ,
     },
     {
         id: 3,
-        icone: CiPill,
-        titulo: 'Farmácia e Padaria Pet',
-        texto: 'Em nosso espaço, o cliente poderá pedir '
+        icone: LuBone,
+        titulo: 'Padaria Pet',
+        texto: 'Quer surpreender seu amigo ? Conheça a Padaria Pet. Nela, você encontrará produtos pets variados e de qualidades como sorvete, molhos para ração e até cerveja !'
     },
 ]
+
+
+

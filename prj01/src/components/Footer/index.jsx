@@ -10,7 +10,8 @@ export default function Footer (){
             <div className="row">
             <div className="col-md-6 col-lg-3 mb-4 mb-md-0">
                 <h2 className="footer-heading">Pet da Montanha</h2>
-                <p>Hotel e Veterinária</p>
+                <p className = "arrumandoFooter">Hotel e veterinária</p>
+
 
                 <ul className="list-unstyled">
                  <li>
@@ -100,7 +101,7 @@ export default function Footer (){
             <p className="copyright">
                 {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
                 Copyright © All rights reserved | This template is made with{" "}
-                <i className="fa fa-heart" aria-hidden="true" /> by{" "}
+                <i className="fa fa-heart" aria-hidden="true" /> by {" "}
                 <a href="https://colorlib.com" target="_blank" className="linkColorlib">
                 Colorlib.com
                 </a>

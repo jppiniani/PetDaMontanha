@@ -6,7 +6,10 @@ export default function Fotos(){
     return(
         <>
         <ImagemComecoPagina titulo="Galeria" />
+        <div className = "boardTexto3">
         <h2 className="titulo">Venha conhecer nosso trabalho mais de perto!</h2>
+        </div>
+        
         <div className="instagram">
             <script async src="https://elfsightcdn.com/platform.js" />
             <div
@@ -14,7 +17,10 @@ export default function Fotos(){
                 data-elfsight-app-lazy=""
             />
         </div>
-        <p>Aqui embaixo temos o carrossel que o João não quis ;(</p>
+        <div className = "boardTexto4">
+            <h2 className = "titulo"> Conheça algum dos nossos clientes!</h2>
+        </div>
+        
         <Carrossel />
         </>
     )
