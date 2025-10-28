@@ -1,0 +1,46 @@
+.card-funcionario {
+  background-color: rgb(107, 145, 96);
+  border-radius: 15px;
+  width: 270px;
+  min-height: 320px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding-top: 100px;
+  padding-bottom: 55px;
+}
+.foto-funcionario-wrapper {
+  position: absolute;
+  top: 35px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.foto-funcionario {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: #5e8f68;
+}
+.info-funcionario {
+  margin: 10px;
+  max-inline-size: 220px;
+  margin-top: 10px;
+  padding-top: 100px;
+  color: #f0f0f0;
+  word-wrap: break-word;
+
+}
+.ocupacao-funcionario {
+  font-size: 0.95rem;
+  max-inline-size: 220px;
+  margin-top: 1.5rem;
+  word-wrap: break-word;
+  color: #f0f0f0;
+}

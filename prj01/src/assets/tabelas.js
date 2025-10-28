@@ -1,6 +1,7 @@
 import { GiDogHouse } from "react-icons/gi";
 import { LuBone } from "react-icons/lu";
 import { MdOutlineLocalHospital } from "react-icons/md";
+import teste from './images/Cachorro1.png'
 
 export const cards = [
     {
@@ -23,5 +24,31 @@ export const cards = [
     },
 ]
 
+export const funcionarios = [
+    {
+        id:1,
+        foto: teste,
+        nome: 'Teste 1',
+        ocupacao: 'Teste' 
+    },
+    {
+        id:2,
+        foto: teste,
+        nome: 'Teste 222222222222222222 222222222222',
+        ocupacao: 'Teste' 
+    },
+    {
+        id:3,
+        foto: teste,
+        nome: 'Teste 3',
+        ocupacao: 'Teste teste teste teste teste teste teste teste teste  teste teste teste teste  teste teste teste teste  teste teste teste teste  ' 
+    },
+    {
+        id:4,
+        foto: teste,
+        nome: 'Nome Placeholder',
+        ocupacao: 'Médico veterinário Placeholder' 
+    }
+]
 
 

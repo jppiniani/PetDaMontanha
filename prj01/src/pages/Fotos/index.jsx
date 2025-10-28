@@ -7,7 +7,7 @@ export default function Fotos(){
         <>
         <ImagemComecoPagina titulo="Galeria" />
         <div className = "boardTexto3">
-        <h2 className="titulo">Venha conhecer nosso trabalho mais de perto!</h2>
+            <h2 className="titulo">Venha conhecer nosso trabalho mais de perto!</h2>
         </div>
         
         <div className="instagram">
@@ -18,7 +18,7 @@ export default function Fotos(){
             />
         </div>
         <div className = "boardTexto4">
-            <h2 className = "titulo"> Conheça algum dos nossos clientes!</h2>
+            <h2 className = "titulo">Conheça algum dos nossos clientes!</h2>
         </div>
         
         <Carrossel />
