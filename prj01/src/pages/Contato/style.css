@@ -1,1 +1,71 @@
 /* Eu fiz esses arquivos css em pastas para caso haja alguma alteração específica no css para não ficar mexendo no bootstrap */
+.boardTexto5{
+    background-color: #6B9160 !important;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: auto;
+    margin-bottom : 2rem;
+    margin-top: 2rem;
+    width: 40%;
+    color: #fff;
+}
+
+.boardMap 
+{
+    background-color: #6B9160 !important;
+    border-radius: 10px;
+    padding: 1.7rem;
+    margin-bottom : 2rem;
+    margin-top: 2rem;
+}
+
+.ftco-section-contato {
+    padding: 4em 0;
+    background-color: #78a16c; 
+}
+
+.ftco-section-contato .row.mb-5 > .col-md-3 {
+    display: flex;
+}
+
+.custom-card-contato {
+    background: var(--card-bg);; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn-custom {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #255318;
+    margin-bottom: 20px;
+}
+
+.btn-custom .fa {
+    color: #fff;
+    font-size: 26px;
+}
+
+
+.texto-contato a,
+.texto-contato a:visited {
+    color: #fff;
+
+    transition: opacity 0.3s ease;
+}
+
+.texto-contato a:hover {
+    color: #fff;
+    opacity: 0.8; 
+}

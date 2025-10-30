@@ -48,8 +48,8 @@ export default function Footer (){
                         </Link>
                     </li>
                     <li>
-                        <Link to="/planos" className="py-2 d-block">
-                            Planos
+                        <Link to="/padaria" className="py-2 d-block">
+                            Padaria PET
                         </Link>
                     </li>
                     <li>

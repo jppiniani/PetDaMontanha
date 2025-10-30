@@ -1,8 +1,15 @@
 import React from 'react';
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
-import PetDaMontanhaMesa from '../../assets/images/PetDaMontanhaMesa.png'
-import './style.css'
+import '../Entrar/style.css'
+
+import Cachorro1 from '../../assets/images/Cachorro1.png'
+
+const UserIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="input-icon">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+  </svg>
+);
 
 const EnvelopeIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="input-icon">
@@ -16,69 +23,79 @@ const LockIcon = () => (
   </svg>
 );
 
-export default function Entrar() {
+export default function Cadastrar() {
   return (
     <>
       <Container fluid className="login-container-fluid">
         <Row className="login-row">
+          
           <Col 
             md={7} 
             className="image-column d-none d-md-block"
-            style={{ backgroundImage: `url(${PetDaMontanhaMesa})` }}
+            style={{ backgroundImage: `url(${Cachorro1})` }}
           >
           </Col>
 
-          <Col md={5} className="form-column form-column-entrar">
+          <Col md={5} className="form-column form-column-cadastrar">
             <div className="form-container">
-
-                {/* <div className="text-center d-block d-md-none">
-                <img 
-                    src={PetDaMontanhaMesa} 
-                    alt="Pet da Montanha" 
-                    className="mobile-logo"
-                />
-                </div>
-               */}
-              <h2 className="text-center">Entrar</h2>
+              
+              <h2 className="text-center">Cadastrar</h2>
               <p className="text-muted text-center">
-                Insira seus dados de acesso abaixo
+                Crie sua conta preenchendo os dados abaixo
               </p>
               
               <Form>
+                {/* Nome */}
+                <Form.Group className="input-group-icon" controlId="formBasicName">
+                  <UserIcon />
+                  <Form.Control 
+                    type="text" 
+                    placeholder="Digite seu nome completo" 
+                    className="form-control-icon"
+                  />
+                </Form.Group>
+                {/* Email */}
                 <Form.Group className="input-group-icon" controlId="formBasicEmail">
                   <EnvelopeIcon />
                   <Form.Control 
                     type="email" 
-                    placeholder="Digite seu email" 
+                    placeholder="Digite seu e-mail" 
                     className="form-control-icon"
                   />
                 </Form.Group>
-
+                {/* Senha */}
                 <Form.Group className="input-group-icon" controlId="formBasicPassword">
                   <LockIcon />
                   <Form.Control 
                     type="password" 
-                    placeholder="Digite sua senha" 
+                    placeholder="Crie uma senha" 
                     className="form-control-icon"
                   />
                 </Form.Group>
+
+                {/* Confirmar Senha */}
+                <Form.Group className="input-group-icon" controlId="formBasicConfirmPassword">
+                  <LockIcon />
+                  <Form.Control 
+                    type="password" 
+                    placeholder="Confirme sua senha" 
+                    className="form-control-icon"
+                  />
+                </Form.Group>
+                {/* Cadastrar */}
                 {/* ainda nao leva pra lugar nenhum */}
                 <Button variant="primary" type="submit" className="btn-login">
-                  Log in
+                  Cadastrar
                 </Button>
-                {/* ainda nao leva pra lugar nenhum */}
-                <a href="#forgot" className="forgot-password-link"> 
-                  Esqueceu a Senha?
-                </a>
 
                 <hr className="separator" />
 
                 <p className="signup-text">
-                  Ainda não tem uma conta?
+                  Já tem uma conta?
                 </p>
                 
-                <Button variant="secondary" type="button" className="btn-signup" as={Link} to="/cadastrar">
-                  Cadastrar
+                <Button variant="secondary" type="button" className="btn-signup" as={Link} to="/entrar">
+                  Entrar
                 </Button>
 
               </Form>
@@ -88,4 +105,4 @@ export default function Entrar() {
       </Container>
     </>
   );
-}   
+}

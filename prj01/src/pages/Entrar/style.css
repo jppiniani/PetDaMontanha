@@ -1,4 +1,163 @@
-.formulario{
-    margin-top: 5rem;
-    margin-bottom: 8rem;
+.login-container-fluid {
+    min-height: 100vh;
+    padding: 0;
+}
+.login-row {
+    min-height: 100vh;
+    margin: 0;
+}
+.image-column {
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+.form-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+.form-container {
+    max-width: 400px;
+    width: 100%;
+}
+.form-container h2 {
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.form-container .text-muted {
+    margin-bottom: 2.5rem;
+    color: #ececec !important;
+    text-align: center;
+}
+.input-group-icon {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #108a43;
+    width: 20px;
+    height: 20px;
+}
+.form-control-icon {
+    padding-left: 50px !important; 
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #003611;
+    background-color: #dbfdd4;
+}
+.form-control-icon:focus{
+    background-color: #dbfdd4;
+    border-color: #ced4da;
+    box-shadow: none;
+}
+.btn-login {
+    font-weight: bold;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+}
+.forgot-password-link {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    text-decoration: none;
+}
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+.separator {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.signup-text {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+.btn-signup {
+    background-color: #dbfdd4;
+    border-color: #ced4da;
+    color: #000000;
+    font-weight: bold;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+}
+.btn-signup:hover {
+    background-color: #dbfdd4;
+    border-color: #adb5bd;
+    color: #000;
+}
+.btn-signup:active{
+    background-color: #1a6904 !important;
+}
+
+/* .mobile-logo {
+  max-width: 10rem;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 767.98px) {
+    .form-column {
+        min-height: 100vh; 
+    }
+} */
+
+@media (max-width: 767.98px) {
+.form-column-entrar {
+    min-height: 100vh;
+    background-image: url('../../assets/images/PetDaMontanhaMesa.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+
+}
+.form-container {
+    background-color: #559a67;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-container h2,
+.form-container .text-muted,
+.signup-text,
+.forgot-password-link {
+    color: #ffffff !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.form-column-cadastrar {
+    min-height: 100vh;
+    background-image: url('../../assets/images/Cachorro1.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+
+}
+.form-container {
+    background-color: #559a67;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-container h2,
+.form-container .text-muted,
+.signup-text,
+.forgot-password-link {
+    color: #ffffff !important;
+}
 }
