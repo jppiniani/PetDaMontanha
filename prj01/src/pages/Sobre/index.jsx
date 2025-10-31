@@ -73,8 +73,8 @@ export default function Sobre(){
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/servicos" className="servicos">
-                                    Farmácia e Padaria Pet <span className="fa fa-chevron-right" />
+                                <Link to="/padaria" className="servicos">
+                                    Padaria Pet <span className="fa fa-chevron-right" />
                                 </Link>
                             </li>
                         </ul>

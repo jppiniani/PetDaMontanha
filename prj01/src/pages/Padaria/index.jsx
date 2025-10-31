@@ -3,6 +3,9 @@ import ImagemComecoPagina from "../../components/ImagemComecoPagina";
 import { produtos } from '../../assets/tabelas';
 import ItensPadaria from "../../components/ItensPadaria/index";
 import ProdutoDetalhe from '../../components/ProdutoDetalhe';
+
+import './style.css'
+
 export default function Padaria(){
     const [selectedProductId, setSelectedProductId] = useState(null);
 

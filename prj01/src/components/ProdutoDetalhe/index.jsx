@@ -12,7 +12,7 @@ export default function ProdutoDetalhe({ productId, onBack }) {
         <section className="py-5">
             <div className="container px-4 px-lg-5 my-5">
                 <div className="mb-4">
-                    <button className="btn btn-outline-dark" onClick={onBack}>
+                    <button className="btn btn-outline-dark btn-detalhes" onClick={onBack}>
                         &larr; Voltar para a lista
                     </button>
                 </div>
@@ -42,6 +42,8 @@ export default function ProdutoDetalhe({ productId, onBack }) {
                             )}
                         </div>
                         <p className="lead">{produtoData.descricaoLonga}</p>
+                        <h4>Estoque: {produtoData.estoque}</h4>
+                        <br />
                         <div className="d-flex">
                             <input
                                 className="form-control text-center me-3"
@@ -50,9 +52,9 @@ export default function ProdutoDetalhe({ productId, onBack }) {
                                 defaultValue="1"
                                 style={{ maxWidth: "3rem" }}
                             />
-                            <button className="btn btn-outline-dark flex-shrink-0" type="button">
+                            <button className="btn btn-outline-dark flex-shrink-0 btn-detalhes" type="button">
                                 <i className="bi-cart-fill me-1" />
-                                Adicionar ao Carrinho
+                                Solicitar produto
                             </button>
                         </div>
                     </div>

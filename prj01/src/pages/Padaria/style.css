@@ -1,1 +1,13 @@
 /* Eu fiz esses arquivos css em pastas para caso haja alguma alteração específica no css para não ficar mexendo no bootstrap */
+.card{
+    background-color: #c7e9bd;
+}
+
+.btn-detalhes{
+    color: #fff !important;
+    background: #1a6904;
+}
+
+.btn-detalhes:hover{
+    background: #229203;
+}

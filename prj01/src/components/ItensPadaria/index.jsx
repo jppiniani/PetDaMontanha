@@ -63,7 +63,7 @@ export default function ItensPadaria({ id, onShowDetails }) {
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                     <div className="text-center">
                         <button 
-                            className="btn btn-outline-dark mt-auto" 
+                            className="btn btn-outline-dark mt-auto btn-detalhes" 
                             onClick={() => onShowDetails(produtoData.id)}
                         >
                             {/* {produtoData.botaoTexto} */}
