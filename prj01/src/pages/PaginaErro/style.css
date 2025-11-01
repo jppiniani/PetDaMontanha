@@ -1,0 +1,13 @@
+body{
+    background: #759f69;
+}
+
+.erro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.erro-imagem{
+    max-width: 600px;
+}

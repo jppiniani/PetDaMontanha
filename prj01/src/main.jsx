@@ -20,11 +20,13 @@ import Padaria from './pages/Padaria/index.jsx';
 import Contato from './pages/Contato/index.jsx';
 import Entrar from './pages/Entrar/index.jsx';
 import Cadastrar from './pages/Cadastrar/index.jsx';
+import PaginaErro from './pages/PaginaErro/index.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/", 
     element: <App />,
+    errorElement: <PaginaErro />,
     children: [
       {
         path: "/",

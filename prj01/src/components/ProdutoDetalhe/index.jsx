@@ -31,14 +31,14 @@ export default function ProdutoDetalhe({ productId, onBack }) {
                         <div className="fs-5 mb-5">
                             {produtoData.precoOriginal ? (
                                 <>
-                                    <span className="text-decoration-line-through">
+                                    <h2 className="text-decoration-line-through">
                                         {produtoData.precoOriginal}
-                                    </span>
+                                    </h2>
                                     {' '}
-                                    <span>{produtoData.preco}</span>
+                                    <h2>{produtoData.preco}</h2>
                                 </>
                             ) : (
-                                <span>{produtoData.preco}</span>
+                                <h2>{produtoData.preco}</h2>
                             )}
                         </div>
                         <p className="lead">{produtoData.descricaoLonga}</p>

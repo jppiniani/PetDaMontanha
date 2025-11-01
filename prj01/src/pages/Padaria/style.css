@@ -11,3 +11,7 @@
 .btn-detalhes:hover{
     background: #229203;
 }
+
+.btn-detalhes:active{
+    background: #229203 !important;
+}
