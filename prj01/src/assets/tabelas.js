@@ -19,6 +19,12 @@ import BiscoitoPet from './images/Padaria/BiscoitoPet.png'
 import PatePremium from './images/Padaria/PatePremium.png'
 import PipocasDoce from './images/Padaria/PipocasDoce.png'
 
+//Imagens Funcionários
+import MairaFunc from './images/Func/MairaFunc.jpeg'
+import BrunaFunc from './images/Func/BrunaFunc.jpeg'
+import LaraFunc from  './images/Func/LaraFunc.jpeg'
+
+
 export const cards = [
     {
         id: 1,
@@ -43,27 +49,21 @@ export const cards = [
 export const funcionarios = [
     {
         id:1,
-        foto: teste,
-        nome: 'Teste 1',
-        ocupacao: 'Teste' 
+        foto: MairaFunc,
+        nome: 'Maíra Acedo Romão',
+        ocupacao: 'Médica Veterinária, fundadora e administradora' 
     },
     {
         id:2,
-        foto: teste,
-        nome: 'Teste 222222222222222222 222222222222',
-        ocupacao: 'Teste' 
+        foto: BrunaFunc,
+        nome: 'Bruna Gabrielly',
+        ocupacao: 'Recepcionista' 
     },
     {
         id:3,
-        foto: teste,
-        nome: 'Teste 3',
-        ocupacao: 'Teste teste teste teste teste teste teste teste teste  teste teste teste teste  teste teste teste teste  teste teste teste teste  ' 
-    },
-    {
-        id:4,
-        foto: teste,
-        nome: 'Nome Placeholder',
-        ocupacao: 'Médico veterinário Placeholder' 
+        foto: LaraFunc,
+        nome: 'Lara Beatriz Mendonça da Costa Pessoa',
+        ocupacao: 'Banhista e Tosadora' 
     }
 ]
 
@@ -78,7 +78,7 @@ export const produtos = [
     rating: 2,
     sale: false,
     imagemDetalhe: Femur,
-    descricaoLonga: "Suíno Natural, deliciosa para seus cães!!",
+    descricaoLonga: "Fêmur suíno natural, delicioso para seus cães. Combate o estresse e certamente promoverá uma atividade divertida para seu cão!",
     estoque: 10
   },
   {
@@ -90,19 +90,19 @@ export const produtos = [
     rating: 5,
     sale: false,
     imagemDetalhe: Sorvete2,
-    descricaoLonga: "Foundue de chocolate",
+    descricaoLonga: "Sabor fondue de chocolate sem adição de açúcar. Melhora a digestibilidade e fortalece as articulações. Perfeito para agradar seu pet!",
     estoque: 12
   },
   {
     id: 3,
-    imagem: MolhoRacao1,
-    nome: "Molho para ração cães e gatos",
-    preco: "R$25,00",
+    imagem: MolhoRacao2,
+    nome: "Molho ração para gatos",
+    preco: "R$11,00",
     precoOriginal: null,
     rating: 0,
     sale: false,
     imagemDetalhe: MolhoRacao2,
-    descricaoLonga: "Costinha e frango",
+    descricaoLonga: "Aprimore a ração do seu gato com o saboroso molho com sabor costelinha!",
     estoque: 8,
   },
   {
@@ -114,7 +114,7 @@ export const produtos = [
     rating: 5,
     sale: false,
     imagemDetalhe: Cerveja,
-    descricaoLonga: "Carne",
+    descricaoLonga: "Sem álcool e rica em fibras, vitaminas e minerais. Sabor carne!",
     estoque: 5,
   },
   {
@@ -126,7 +126,7 @@ export const produtos = [
     rating: 0,
     sale: false,
     imagemDetalhe: TirasCarne,
-    descricaoLonga: "Picanha com açafrão e linhaça",
+    descricaoLonga: "Bifinhos em tiras deliciosos com sabor picanha com açafrão e linhaça. Feito com proteína bovina e rico em fibras. Sem adição de corantes e aromatizantes artificiais!",
     estoque: 18,
   },
   {
@@ -138,7 +138,7 @@ export const produtos = [
     rating: 0,
     sale: false,
     imagemDetalhe: Ossinhos,
-    descricaoLonga: "Chocolate",
+    descricaoLonga: "Ossinhos deliciosos e seguros com sabor chocolate para divertir seu pet!",
     estoque: 17,
   },
   {
@@ -148,9 +148,9 @@ export const produtos = [
     preco: "R$16,50",
     precoOriginal: null,
     rating: 5,
-    sale: true,
+    sale: false,
     imagemDetalhe: Caolorado,
-    descricaoLonga: "Carne, frango",
+    descricaoLonga: "Cerveja para cães da cervejaria Colorado. Bebida não alcoólica nos sabores carne e frango!",
     estoque: 14,
   },
   {
@@ -162,7 +162,7 @@ export const produtos = [
     rating: 5,
     sale: false,
     imagemDetalhe: Muffin,
-    descricaoLonga: "Muffin",
+    descricaoLonga: "Muffins para cães e gatos nos sabores vegano (com linhaça), picanha com açafrão, banana com aveia e beijinho com hortelã. Todos com ações específicas e benéficas para seus pets!",
     estoque: 9,
   },
   {
@@ -174,7 +174,7 @@ export const produtos = [
     rating: 5,
     sale: false,
     imagemDetalhe: BoloAniversario,
-    descricaoLonga: "Chocolate com hortelã, salmão com camomila",
+    descricaoLonga: "Comemore o aniversário do seu amor com os bolos de aniversário nos sabores salmão com camomila (gatos) e chocolate com hortelã (cachorros). Os produtos acompanham uma vela de patinha. Alivia o estresse do seu gato e melhora a saúde bucal do seu cão!",
     estoque: 11,
   },
   {
@@ -186,8 +186,7 @@ export const produtos = [
     rating: 5,
     sale: false,
     imagemDetalhe: BiscoitoPet,
-    // descricaoLonga: "Carne, frango",
-    descricaoLonga: "Seu pet merece o melhor. Apresentamos o Biscoito Pet de 80 gramas, no irresistível sabor Carne e Frango, a recompensa que une prazer e saúde. Oferecemos opções adaptadas a cada fase e necessidade: Super Premium, Idoso e Diet. Formulado com 8 tipos de cereais, este biscoito garante fácil digestão e é rico em proteínas e vitaminas, maximizando a vitalidade e o bem-estar. É o agrado perfeito e nutritivo para o seu companheiro.",
+    descricaoLonga: "Seu pet merece o melhor. Apresentamos o Biscoito Pet de 80 gramas no irresistível sabor Carne e Frango, a recompensa que une prazer e saúde. Oferecemos opções adaptadas a cada fase e necessidade: Super Premium, Idoso e Diet. Formulado com 8 tipos de cereais, este biscoito garante fácil digestão e é rico em proteínas e vitaminas, maximizando a vitalidade e o bem-estar. É o agrado perfeito e nutritivo para o seu companheiro.",
     estoque: 21,
   },
   {
@@ -199,19 +198,32 @@ export const produtos = [
     rating: 5,
     sale: false,
     imagemDetalhe: PatePremium,
-    descricaoLonga: "Frango, carne bovina, carne de panela com legumes",
+    descricaoLonga: "Alimento completo para cães e gatos feitos à base de batata doce. Nos sabores frango, carne bovina e cordeiro e carne de panela com legumes!",
     estoque: 15,
   },
   {
     id: 12,
     imagem: PipocasDoce,
-    nome: "Pipocas Doces",
-    preco: "R$13,00",
+    nome: "Pipocas Doces e Nuts",
+    preco: "R$12,00-13,00",
     precoOriginal: null,
     rating: 5,
     sale: false,
     imagemDetalhe: PipocasDoce,
-    descricaoLonga: "Leite",
+    descricaoLonga: "50 gramas de petiscos nos sabores leite e nutty bavarian!",
     estoque: 16,
+  },
+
+  {
+    id: 13,
+    imagem: MolhoRacao1,
+    nome: "Molho ração para cães",
+    preco: "R$11,00",
+    precoOriginal: null,
+    rating: 0,
+    sale: false,
+    imagemDetalhe: MolhoRacao1,
+    descricaoLonga: "Aprimore a ração do seu cão com o saboroso molho sabor frango com açafrão e mandioquinha. Ajuda no apetite, combate o tártaro, melhora a digestibilidade, articulações fortalecidas, rico em vitaminas e minerais e apenas 9 kcal por pote!",
+    estoque: 12,
   }
 ];

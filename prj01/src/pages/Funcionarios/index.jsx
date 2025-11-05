@@ -12,11 +12,6 @@ export default function Funcionarios(){
                         <Funcionario id={1} />
                         <Funcionario id={2} />
                         <Funcionario id={3} />
-                        <Funcionario id={4} />
-                        <Funcionario id={4} />
-                        <Funcionario id={4} />
-                        <Funcionario id={4} />
-                        <Funcionario id={4} />
                     </div>
                 </div>
             </section>
