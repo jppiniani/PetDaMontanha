@@ -24,6 +24,8 @@ import MairaFunc from './images/Func/MairaFunc.jpeg'
 import BrunaFunc from './images/Func/BrunaFunc.jpeg'
 import LaraFunc from  './images/Func/LaraFunc.jpeg'
 
+//Imagens serviços
+
 
 export const cards = [
     {
@@ -226,4 +228,27 @@ export const produtos = [
     descricaoLonga: "Aprimore a ração do seu cão com o saboroso molho sabor frango com açafrão e mandioquinha. Ajuda no apetite, combate o tártaro, melhora a digestibilidade, articulações fortalecidas, rico em vitaminas e minerais e apenas 9 kcal por pote!",
     estoque: 12,
   }
+]
+
+export const tabserviços = [
+    {
+        id: 1,
+        icone: GiDogHouse,
+        titulo: 'Hotel e Creche Veterinária',
+        texto: 'Vai viajar ou possui algum compromisso, mas não quer deixar seu pet sozinho? A melhor opção é conhecer o serviço de hospedagem veterinária. Com ela, você pode deixar seu pet em um ambiente pensado no conforto dos bixinhos, onde ele não se sentirá sozinho, poderá ter contato com outros pets, além de estarem monitorados por profissionais qualificados e apaixonados pelos animais.',
+        titulo2: 'Horários',
+        texto2: 'Todos os dias das 8h às 19h, com check-in e check-out com agendamento prévio.'
+    },
+    {
+        id: 2,
+        icone: MdOutlineLocalHospital,
+        titulo: 'Cuidados Veterinários',
+        texto: 'Oferecemos cuidados veterinários como avaliações médicas, banho e tosa e ozonioterapia. Também atendemos em domicílio.' ,
+    },
+    {
+        id: 3,
+        icone: LuBone,
+        titulo: 'Padaria Pet',
+        texto: 'Quer surpreender seu amigo ? Conheça a Padaria Pet. Nela, você encontrará produtos pets variados e de qualidades como sorvete, molhos para ração e até cerveja !'
+    },
 ];
