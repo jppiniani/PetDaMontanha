@@ -16,7 +16,7 @@ export default function Contato(){
                     <div className="wrapper">
                     <div className="row mb-5">
 
-                        <div className="col-md-3">
+                        <div className="col-md-3 mb-5">
                         <div className="dbox w-100 text-center custom-card-contato">
                             <div className="icon d-flex align-items-center justify-content-center btn-custom">
                             <span className="fa fa-map-marker" />
@@ -30,7 +30,7 @@ export default function Contato(){
                             </div>
                         </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-3 mb-5">
                         <div className="dbox w-100 text-center custom-card-contato">
                             <div className="icon d-flex align-items-center justify-content-center btn-custom">
                             <span className="fa fa-phone" />
@@ -42,7 +42,7 @@ export default function Contato(){
                             </div>
                         </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-3 mb-5">
                         <div className="dbox w-100 text-center custom-card-contato">
                             <div className="icon d-flex align-items-center justify-content-center btn-custom">
                             <span className="fa fa-paper-plane" />
@@ -56,7 +56,7 @@ export default function Contato(){
                             </div>
                         </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-3 mb-5">
                         <div className="dbox w-100 text-center custom-card-contato">
                             <div className="icon d-flex align-items-center justify-content-center btn-custom">
                             <span className="fa fa-globe" />
@@ -77,7 +77,7 @@ export default function Contato(){
             </div>
             </section>
 
-        <div className = "boardTexto5 "> {/*Esse css está no css do sobre. Lá eu explico o porquê*/} {/* não ta mais :P */}
+        <div className = "boardTexto"> {/*Esse css está no css do sobre. Lá eu explico o porquê*/} {/* não ta mais :P */}
         <h2 className="titulo">Nossa localização!</h2>  
         </div>
         <div className="boardMap"> {/*Esse css está no css do sobre. Lá eu explico o porquê*/} {/* não ta mais :P */}

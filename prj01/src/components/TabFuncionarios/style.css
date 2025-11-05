@@ -7,11 +7,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  padding-top: 100px;
+  padding-top: 130px;
   padding-bottom: 55px;
+  
 }
 .foto-funcionario-wrapper {
   position: absolute;
@@ -28,20 +29,57 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
   background-color: #5e8f68;
 }
+
 .info-funcionario {
+  margin: 10px;
+  max-inline-size: 220px;
+  margin-top: 30px;
+  padding-top: 100px;
+  color: #f0f0f0;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Mantém o texto no topo da área */
+  align-items: center;
+  flex-grow: 1; /* Faz ocupar o espaço restante do card */
+}
+
+.nome-funcionario {
+  font-size: 1.32rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  min-height: 50px; /* garante alinhamento do nome */
+}
+
+.ocupacao-funcionario {
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  text-align: center;
+  min-height: 60px; /* garante alinhamento da ocupação */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* .info-funcionario {
   margin: 10px;
   max-inline-size: 220px;
   margin-top: 10px;
   padding-top: 100px;
   color: #f0f0f0;
   word-wrap: break-word;
+  display:flex;
+  flex-direction:column;
   
 
 }
 .ocupacao-funcionario {
   font-size: 1.1rem;
-  max-inline-size: 220px;
-  margin-top: 1.5rem;
+  margin-top: auto;
   word-wrap: break-word;
   color: #f0f0f0;
-}
+  min-height: 75px;
+  text-align: center;
+}  */

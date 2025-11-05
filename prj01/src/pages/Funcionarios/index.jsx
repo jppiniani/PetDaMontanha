@@ -8,7 +8,7 @@ export default function Funcionarios(){
             <ImagemComecoPagina titulo="Funcionários" />
             <section className="ftco-section ftco-no-pt ftco-intro">
                 <div className="container">
-                    <div className="row" >
+                    <div className="row justify-content-center" >
                         <Funcionario id={1} />
                         <Funcionario id={2} />
                         <Funcionario id={3} />

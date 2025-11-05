@@ -36,7 +36,6 @@
     margin-top: 60px;
     position: relative;
     width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,4 +67,9 @@
 .texto-contato a:hover {
     color: #fff;
     opacity: 0.8; 
+}
+
+.titulo{
+    display: flex;
+    align-items:center;
 }
