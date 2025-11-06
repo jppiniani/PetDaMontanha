@@ -1,32 +1,35 @@
-import { tabserviços } from '../../assets/tabelas';
+import React from 'react';
 import './style.css';
 
-export default function TabServiços({ id }) {
+const TabServicos = ({ servico, imageSide = 'left' }) => {
+  const { titulo, texto, titulo2, texto2, imagem } = servico;
 
-    const tsData = tabserviços.find(ts => ts.id === id);
+  const orderClassImg = imageSide === 'left' ? '' : 'order-md-last';
+  const orderClassText = imageSide === 'left' ? '' : 'order-md-first';
 
-    if (!tsData) {
-        return null;
-    }
+  return (
+    <div className="row g-0 shadow-lg rounded overflow-hidden servico-card mb-5">
+      <div className={`col-12 col-md-5 servico-imagem-col ${orderClassImg}`}>
+        <img
+          src={imagem}
+          alt={titulo}
+          className="servico-imagem" 
+        />
+      </div>
+      <div className={`col-12 col-md-7 p-4 p-md-5 servico-texto-wrapper ${orderClassText}`}>
+        
+        <h2 className="servico-titulo">{titulo}</h2>
+        <p className="servico-texto">{texto}</p>
 
-    const IconeComponente = tsData.icone;
+        {titulo2 && (
+          <div className="mt-auto pt-4 w-100 servico-horario-bloco">
+            <h4 className="servico-subtitulo">{titulo2}</h4>
+            <p className="servico-texto-secundario">{texto2}</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
 
-    return (
-        <div className="col-md-4 d-flex align-self-stretch px-4 ftco-animate">
-            <div className="d-block services text-center custom-card">
-                <div className="icon-circle">
-                    {IconeComponente && <IconeComponente />}
-                </div>
-
-                <div className="media-body">
-                    <div className="text-content">
-                        <h3 className="heading">{tsData.titulo}</h3>
-                        <p>{tsData.texto}</p>
-                        <h3 className="heading">{tsData.titulo2}</h3>
-                        <p>{tsData.texto2}</p>
-                    </div>                  
-                </div>
-            </div>
-        </div>
-    );
-}
+export default TabServicos;

@@ -25,14 +25,14 @@ export default function Sobre(){
                 <bold>
                 <h2 className="sobre1">Conheça a nossa história</h2>
                 </bold>
-                <h4 className="sobre2">Quem somos? <br/> </h4>
+                <h4 className="sobre2">Quem somos?<br/> </h4>
                 <div className = "boardTexto">
                 <p className="texto1">
                 Pioneiros de Joanopólis. <br/>    
                 Hotel de cachorro e gato, será? <br />
                 Pois é, a ideia inovadora de nossas vidas veio ao decorrer do segundo ano da pandemia em 2020. Eu já formada em veterinária há 2 anos, com um bebê de meses, 
                 meu marido sem emprego, precisávamos de alguma coisa. Começamos a hospedar em nossa casa e eu atendia a domicílio. Mas a procura de hospedagem pet começou a 
-                aumentar e pensei : Por que não abrir um hotelzinho com clínica veterinária ?<br/>  Então, coloquei o sonho no papel : Estudei, fiz cursos, contratamos uma ótima 
+                aumentar e pensei: Por que não abrir um hotelzinho com clínica veterinária?<br/>Então, coloquei o sonho no papel: Estudei, fiz cursos, contratamos uma ótima 
                 arquiteta e pensamos em cada detalhe para os pets terem conforto e uma experiência maravilhosa. E assim cresceu o Pet da Montanha - Hotel e Veterinária, na 
                 cidade de Joanópolis, nossa Joia da Mantiqueira, terra do Lobisomem, com muitas cachoeiras e seus encantos naturais.
                 </p>
@@ -82,7 +82,7 @@ export default function Sobre(){
                 </div>
                 <div className="sidebar-box ftco-animate">
                 <h3 className="titulo-secao">Contato</h3>
-                <p className="titulo-secao">Telefone :</p>
+                <p className="titulo-secao">Telefone:</p>
                 <p>
                     <a href="https://wa.me/+5511944926547"className="mr-2">
                     <span className="fa fa-phone mr-1" />
@@ -90,7 +90,7 @@ export default function Sobre(){
                     </a>
                 </p>
                 <p />
-                <p className="titulo-secao">Email : </p>
+                <p className="titulo-secao">Email:</p>
                 <p>
                     <a href="mailto: petdamontanha.joa@gmail.com" className="mr-2">
                     petdamontanha.joa@gmail.com

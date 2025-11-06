@@ -249,6 +249,18 @@ export const tabserviços = [
         id: 3,
         icone: LuBone,
         titulo: 'Padaria Pet',
-        texto: 'Quer surpreender seu amigo ? Conheça a Padaria Pet. Nela, você encontrará produtos pets variados e de qualidades como sorvete, molhos para ração e até cerveja !'
+        texto: 'Quer surpreender seu amigo ? Conheça a Padaria Pet. Nela, você encontrará produtos pets variados e de qualidades como sorvete, molhos para ração e até cerveja!'
     },
+    {
+      id: 4,
+      titulo: 'Banho e Tosa',
+      texto: 'TesteTesteTesteTesteTesteTesteTesteTesteTesteTeste'
+    },
+    {
+      id: 5,
+      titulo: 'Motodog',
+      texto: 'TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste',
+      titulo2: 'Teste',
+      texto2: 'TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste',
+    }
 ];
