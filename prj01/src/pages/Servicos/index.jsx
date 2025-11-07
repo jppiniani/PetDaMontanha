@@ -9,6 +9,8 @@ import Maira01 from '../../assets/images/Maira01.jpeg'
 import BiscoitoPet from '../../assets/images/Padaria/BiscoitoPet.png'
 import taxidog from '../../assets/images/Serv/taxidog.jpeg'
 import banhoetosa from '../../assets/images/Serv/banhoetosa.jpeg'
+import farmaciapet from '../../assets/images/Serv/farmaciapet.jpg'
+import acessoriopet from '../../assets/images/Serv/acesspet.jpg'
 
 /*Imagens para aparecer nos serviços com seus respectivos id. */
 const imageMap = {
@@ -16,7 +18,9 @@ const imageMap = {
   2: Maira01,
   3: BiscoitoPet,
   4 : banhoetosa,
-  5:taxidog
+  5:taxidog,
+  6:farmaciapet,
+  7: acessoriopet
 
 };
 

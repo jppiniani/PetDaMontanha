@@ -234,14 +234,16 @@ export const tabserviços = [
     {
         id: 1,
         titulo: 'Hotel e Creche Veterinária',
-        texto: 'Vai viajar ou possui algum compromisso, mas não quer deixar seu pet sozinho? A melhor opção é conhecer o serviço de hospedagem veterinária. Com ela, você pode deixar seu pet em um ambiente pensado no conforto dos bixinhos, onde ele não se sentirá sozinho, poderá ter contato com outros pets, além de estarem monitorados por profissionais qualificados e apaixonados pelos animais.',
+        texto: 'Vai viajar ou possui algum compromisso, mas não quer deixar seu pet sozinho? A melhor opção é conhecer o serviço de hospedagem veterinária. Com ela, você pode deixar seu pet em um ambiente pensado no conforto dos bixinhos, onde ele não se sentirá sozinho, poderá ter contato com outros pets, além de estarem monitorados por profissionais qualificados e apaixonados pelos animais. Alimentação, brincadeiras, além de fotos e vídeos para o dono são garantidos durante a estadia!',
         titulo2: 'Horários',
         texto2: 'Todos os dias das 8h às 19h, com check-in e check-out com agendamento prévio.'
     },
     {
         id: 2,
         titulo: 'Cuidados Veterinários',
-        texto: 'Oferecemos cuidados veterinários check-ups preventivos Também atendemos em domicílio.' ,
+        texto: 'Oferecemos cuidados veterinários: Casos de emergência, consultas, exames, vacinação, microchipagem, ozonioterapia. Também atendemos em domicílio.' ,
+        titulo2: 'Horários',
+        texto2: 'De segunda a sexta das 8h às 17h. Aos sábados, das 8h às 12h.'
     },
     {
         id: 3,
@@ -261,6 +263,20 @@ export const tabserviços = [
       id: 5,
       titulo: 'Táxi Dog',
       texto: 'Buscamos e entregamos seu pet na sua casa. Basta nos avisar via Whatsapp!',
+      titulo2: '',
+      texto2: '',
+    },
+    {
+      id: 6,
+      titulo: 'Farmácia Pet',
+      texto: 'Conte com diversos medicamentos de alta qualidade e seguros para seu melhor amigo.',
+      titulo2: '',
+      texto2: '',
+    },
+    {
+      id: 7,
+      titulo: 'Acessórios Pet',
+      texto: 'Oferecemos vários produtos acessórios para seu pet como brinquedos, guia, coleira, etc. Conforto e diversão garantida!',
       titulo2: '',
       texto2: '',
     }
