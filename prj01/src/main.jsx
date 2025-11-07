@@ -56,14 +56,14 @@ const router = createBrowserRouter([
         path: "contato", 
         element: <Contato />,
       },
-      {
-        path: "entrar", 
-        element: <Entrar />,
-      },
-      {
-        path: "cadastrar",
-        element: <Cadastrar />
-      },
+      // {
+      //   path: "entrar", 
+      //   element: <Entrar />,
+      // },
+      // {
+      //   path: "cadastrar",
+      //   element: <Cadastrar />
+      // },
     ],
   },
 ]);

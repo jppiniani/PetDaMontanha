@@ -22,7 +22,6 @@ const TabServicos = ({ servico, imageSide = 'left' }) => {
         <h2 className="servico-titulo">{titulo}</h2>
         <p className="servico-texto">{texto}</p>
 
-        {/* 3. ADICIONAR O BLOCO DE RENDERIZAÇÃO CONDICIONAL */}
         {instagramLink && (
           <div className="servico-social-icon mt-3">
             <p className = "servico-texto">Acompanhe o Instagram da Lara <a 
@@ -31,7 +30,7 @@ const TabServicos = ({ servico, imageSide = 'left' }) => {
               rel="noopener noreferrer" 
               aria-label="Link para o Instagram"
             >
-              <FaInstagram size={28} /> {/* Você pode ajustar o tamanho aqui */}
+              <FaInstagram size={28} />
             </a>  </p>
           </div>
         )}

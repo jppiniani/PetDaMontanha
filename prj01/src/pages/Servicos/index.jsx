@@ -5,7 +5,7 @@ import TabServicos from '../../components/TabServiços/index';
 import './style.css'
 
 import Cachorro1 from '../../assets/images/Cachorro1.png'
-import Maira01 from '../../assets/images/Maira01.jpeg'
+import Maira01 from '../../assets/images/maira01.jpeg'
 import BiscoitoPet from '../../assets/images/Padaria/BiscoitoPet.png'
 import Taxidog from '../../assets/images/Serv/taxidog.jpeg'
 import Banhoetosa from '../../assets/images/Serv/banhoetosa.jpeg'
@@ -20,8 +20,7 @@ const imageMap = {
   4: Banhoetosa,
   5: Taxidog,
   6: Farmaciapet,
-  7: Acessoriopet
-
+  7: Acessoriopet,
 };
 
 const servicosCompletos = tabserviços.map((servico) => ({

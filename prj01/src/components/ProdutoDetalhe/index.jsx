@@ -45,16 +45,15 @@ export default function ProdutoDetalhe({ productId, onBack }) {
                         <h4>Estoque: {produtoData.estoque}</h4>
                         <br />
                         <div className="d-flex">
-                            <input
+                            {/* <input
                                 className="form-control text-center me-3"
                                 id="inputQuantity"
                                 type="num"
                                 defaultValue="1"
                                 style={{ maxWidth: "3rem" }}
-                            />
+                            /> */}
                             <button className="btn btn-outline-dark flex-shrink-0 btn-detalhes" type="button">
-                                <i className="bi-cart-fill me-1" />
-                                Solicitar produto
+                                <a href="https://wa.me/c/5511944926547" className='bi-cart-fill me-1'>Solicitar produto</a>
                             </button>
                         </div>
                     </div>

@@ -57,11 +57,11 @@ export default function NavBar() {
                         </Nav.Link>
                     </Nav>
 
-                    <Nav className="nav-botao-entrar"> 
+                    {/* <Nav className="nav-botao-entrar"> 
                         <Nav.Link as={Link} to="/entrar" className="btn btn-login" onClick={handleNavClose}>
                             Entrar
                         </Nav.Link>
-                    </Nav>
+                    </Nav> */}
                     
                 </Navbar.Collapse>
             </Container>
