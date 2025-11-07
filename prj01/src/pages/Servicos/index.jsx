@@ -7,10 +7,10 @@ import './style.css'
 import Cachorro1 from '../../assets/images/Cachorro1.png'
 import Maira01 from '../../assets/images/Maira01.jpeg'
 import BiscoitoPet from '../../assets/images/Padaria/BiscoitoPet.png'
-import Taxidog from '../../assets/images/Serv/Taxidog.jpeg'
-import Banhoetosa from '../../assets/images/Serv/Banhoetosa.jpeg'
-import Farmaciapet from '../../assets/images/Serv/Farmaciapet.jpg'
-import Acessoriopet from '../../assets/images/Serv/Acesspet.jpg'
+import Taxidog from '../../assets/images/Serv/taxidog.jpeg'
+import Banhoetosa from '../../assets/images/Serv/banhoetosa.jpeg'
+import Farmaciapet from '../../assets/images/Serv/farmaciapet.jpg'
+import Acessoriopet from '../../assets/images/Serv/acesspet.jpg'
 
 /*Imagens para aparecer nos serviços com seus respectivos id. */
 const imageMap = {
