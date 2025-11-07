@@ -5,19 +5,24 @@ import TabServicos from '../../components/TabServiços/index';
 import './style.css'
 
 import Cachorro1 from '../../assets/images/Cachorro1.png'
-import Maira02 from '../../assets/images/Maira02.avif'
+import Maira01 from '../../assets/images/Maira01.jpeg'
 import BiscoitoPet from '../../assets/images/Padaria/BiscoitoPet.png'
+import taxidog from '../../assets/images/Serv/taxidog.jpeg'
+import banhoetosa from '../../assets/images/Serv/banhoetosa.jpeg'
 
+/*Imagens para aparecer nos serviços com seus respectivos id. */
 const imageMap = {
   1:  Cachorro1,
-  2: Maira02,
+  2: Maira01,
   3: BiscoitoPet,
-  /* Quem for colocar as proximas imagens importa aqui nesse arquivo e coloca o número de acordo com o id lá na tabela*/
+  4 : banhoetosa,
+  5:taxidog
+
 };
 
 const servicosCompletos = tabserviços.map((servico) => ({
   ...servico,
-  imagem: imageMap[servico.id] || 'https://placehold.co/600x500', /* Imagem TOP placeholder vai tomando*/
+  imagem: imageMap[servico.id] || 'https://placehold.co/600x500',
 }));
 
 export default function Servicos() {

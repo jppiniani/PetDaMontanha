@@ -233,7 +233,6 @@ export const produtos = [
 export const tabserviços = [
     {
         id: 1,
-        icone: GiDogHouse,
         titulo: 'Hotel e Creche Veterinária',
         texto: 'Vai viajar ou possui algum compromisso, mas não quer deixar seu pet sozinho? A melhor opção é conhecer o serviço de hospedagem veterinária. Com ela, você pode deixar seu pet em um ambiente pensado no conforto dos bixinhos, onde ele não se sentirá sozinho, poderá ter contato com outros pets, além de estarem monitorados por profissionais qualificados e apaixonados pelos animais.',
         titulo2: 'Horários',
@@ -241,26 +240,28 @@ export const tabserviços = [
     },
     {
         id: 2,
-        icone: MdOutlineLocalHospital,
         titulo: 'Cuidados Veterinários',
-        texto: 'Oferecemos cuidados veterinários como avaliações médicas, banho e tosa e ozonioterapia. Também atendemos em domicílio.' ,
+        texto: 'Oferecemos cuidados veterinários check-ups preventivos Também atendemos em domicílio.' ,
     },
     {
         id: 3,
-        icone: LuBone,
         titulo: 'Padaria Pet',
         texto: 'Quer surpreender seu amigo ? Conheça a Padaria Pet. Nela, você encontrará produtos pets variados e de qualidades como sorvete, molhos para ração e até cerveja!'
     },
     {
       id: 4,
       titulo: 'Banho e Tosa',
-      texto: 'TesteTesteTesteTesteTesteTesteTesteTesteTesteTeste'
+      texto: 'Oferecemos o serviço de banho e tosa realizado pela especialista em estética pet e groomer certificado Lara Beatriz Mendonça da Costa Pessoa.',
+      instagramLink: "https://www.instagram.com/groomerlarabeatriz/",
+      titulo2: 'Horários',
+      texto2: 'De segunda a sexta das 9h às 18h. Aos sábados, das 9h às 13h.'
+
     },
     {
       id: 5,
-      titulo: 'Motodog',
-      texto: 'TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste',
-      titulo2: 'Teste',
-      texto2: 'TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste',
+      titulo: 'Táxi Dog',
+      texto: 'Buscamos e entregamos seu pet na sua casa. Basta nos avisar via Whatsapp!',
+      titulo2: '',
+      texto2: '',
     }
 ];
