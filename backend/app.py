@@ -1,43 +1,65 @@
-from flask import Flask
-from flask_cors import CORS
-from src.db import init_db
-from src.auth import auth
-from dotenv import load_dotenv  # Para carregar variáveis de ambiente
+from flask import Blueprint, request, jsonify
+from src.models import criar_usuario, buscar_usuario
+import bcrypt
+import jwt
+import datetime
 import os
+import psycopg2.errors  # Importar erros do Postgres
 
-# Carrega variáveis de ambiente de um arquivo .env
-load_dotenv()
+auth = Blueprint("auth", __name__)
 
-app = Flask(__name__)
-
-# Configuração do CORS mais flexível para dev e produção
-# Pegar a URL do frontend do Vercel das variáveis de ambiente
-frontend_url = os.getenv("FRONTEND_URL", "http://localhost:5173")
-
-CORS(
-    app,
-    # Permitir origem do localhost e da Vercel
-    resources={r"/*": {"origins": ["http://localhost:5173", frontend_url]}},
-    supports_credentials=True,
-    
-    # --- ESTA É A LINHA MAIS IMPORTANTE PARA CORRIGIR SEU ERRO ---
-    # Permite que o navegador envie os cabeçalhos 'Content-Type' (para JSON)
-    # e 'Authorization' (para o token JWT no futuro)
-    allow_headers=["Content-Type", "Authorization"]
+SECRET = os.getenv(
+    "SECRET",
+    "988c88300c41c934c7d7ff3162a280afef2c1976df9b3a12d879d8eee36cd097"
 )
 
-# Inicializar o DB (e criar o admin)
-init_db()
+# CADASTRO
+@auth.route("/register", methods=["POST"])
+def register():
+    data = request.json
+    usuario = data.get("usuario")
+    senha = data.get("senha")
 
-# Registrar rotas de autenticação
-app.register_blueprint(auth)
+    if not usuario or not senha:
+        return jsonify({"error": "Preencha todos os campos"}), 400
 
-@app.get("/me")
-def me():
-    # Idealmente, esta rota deve ser protegida e verificar o token JWT
-    return {"status": "ok"}
+    senha_hash = bcrypt.hashpw(senha.encode(), bcrypt.gensalt())
 
-# Manter isso para rodar localmente com 'python app.py'
-if __name__ == "__main__":
-    # Adicionar debug=True ajuda a ver erros e recarrega o servidor automaticamente
-    app.run(port=5000, debug=True)
+    try:
+        criar_usuario(usuario, senha_hash)
+        return jsonify({"message": "Usuário cadastrado"}), 201
+    except psycopg2.errors.UniqueViolation:
+        return jsonify({"error": "Usuário já existe"}), 400
+    except Exception as e:
+        print(f"Erro inesperado no registro: {e}")
+        return jsonify({"error": "Erro interno no servidor"}), 500
+
+
+# LOGIN
+@auth.route("/login", methods=["POST"])
+def login():
+    data = request.json
+    usuario = data.get("usuario")
+    senha = data.get("senha")
+
+    if not usuario or not senha:
+        return jsonify({"error": "Usuário ou senha não preenchidos"}), 400
+
+    # --- ESTA É A LINHA QUE FALTAVA ---
+    row = buscar_usuario(usuario)
+    # ---------------------------------
+
+    if not row:
+        return jsonify({"error": "Usuário não encontrado"}), 404
+
+    senha_hash = row[0] # Agora 'row' existe
+
+    if bcrypt.checkpw(senha.encode(), senha_hash):
+        token = jwt.encode({
+            "usuario": usuario,
+            "exp": datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=3)
+        }, SECRET, algorithm="HS256")
+
+        return jsonify({"token": token})
+
+    return jsonify({"error": "Senha incorreta"}), 401

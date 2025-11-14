@@ -55,7 +55,7 @@ def login():
     row = buscar_usuario(usuario)
 
     if not row:
-        return jsonify({"error": "Usuário não encontrado"}), 404
+        return jsonify({"error": "Usuário ou Senha incorretos."}), 404
 
     senha_hash = row[0]
 
@@ -68,4 +68,4 @@ def login():
 
         return jsonify({"token": token})
 
-    return jsonify({"error": "Senha incorreta"}), 401
+    return jsonify({"error": "Usuário ou Senha incorretos."}), 401
