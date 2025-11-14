@@ -10,6 +10,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 import './index.css';
 import App from './App.jsx';
 
+import { AuthProvider } from './context/AuthContext.jsx';
+
 // Importação das páginas
 import Inicio from './pages/Inicio/index.jsx';
 import Sobre from './pages/Sobre/index.jsx'
@@ -56,20 +58,22 @@ const router = createBrowserRouter([
         path: "contato", 
         element: <Contato />,
       },
-      // {
-      //   path: "entrar", 
-      //   element: <Entrar />,
-      // },
-      // {
-      //   path: "cadastrar",
-      //   element: <Cadastrar />
-      // },
+      {
+        path: "entrar", 
+        element: <Entrar />,
+      },
+      {
+        path: "cadastrar",
+        element: <Cadastrar />
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>
 );

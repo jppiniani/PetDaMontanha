@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import PetDaMontanhaMesa from '../../assets/images/PetDaMontanhaMesa.png'
+import { api } from "../../api";
+import { useAuth } from '../../context/AuthContext';
 import './style.css'
 
 const EnvelopeIcon = () => (
@@ -17,75 +19,93 @@ const LockIcon = () => (
 );
 
 export default function Entrar() {
+  const [usuario, setUsuario] = useState("");
+  const [senha, setSenha] = useState("");
+  const [msg, setMsg] = useState("");
+
+  const { login } = useAuth();
+  const navigate = useNavigate();
+
+  async function handleLogin(e) {
+    e.preventDefault();
+    try {
+      const resposta = await api.post("/login", { usuario, senha });
+      login(resposta.data.token); 
+      navigate("/"); 
+      // localStorage.setItem("token", resposta.data.token);
+      // setMsg("Login realizado com sucesso!");
+    } catch (error) {
+      setMsg(error.response?.data?.error || "Erro ao tentar fazer login.");
+    }
+  }
+
   return (
     <>
       <Container fluid className="login-container-fluid">
         <Row className="login-row">
+
           <Col 
             md={7} 
             className="image-column d-none d-md-block"
             style={{ backgroundImage: `url(${PetDaMontanhaMesa})` }}
-          >
-          </Col>
+          />
 
           <Col md={5} className="form-column form-column-entrar">
             <div className="form-container">
-
-                {/* <div className="text-center d-block d-md-none">
-                <img 
-                    src={PetDaMontanhaMesa} 
-                    alt="Pet da Montanha" 
-                    className="mobile-logo"
-                />
-                </div>
-               */}
               <h2 className="text-center">Entrar</h2>
               <p className="text-muted text-center">
                 Insira seus dados de acesso abaixo
               </p>
               
-              <Form>
-                <Form.Group className="input-group-icon" controlId="formBasicEmail">
+              <Form onSubmit={handleLogin}>
+
+                <Form.Group className="input-group-icon">
                   <EnvelopeIcon />
                   <Form.Control 
-                    type="email" 
-                    placeholder="Digite seu email" 
+                    type="text"
+                    placeholder="Digite seu usuário"
                     className="form-control-icon"
+                    onChange={e => setUsuario(e.target.value)}
                   />
                 </Form.Group>
 
-                <Form.Group className="input-group-icon" controlId="formBasicPassword">
+                <Form.Group className="input-group-icon">
                   <LockIcon />
                   <Form.Control 
                     type="password" 
                     placeholder="Digite sua senha" 
                     className="form-control-icon"
+                    onChange={e => setSenha(e.target.value)}
                   />
                 </Form.Group>
-                {/* ainda nao leva pra lugar nenhum */}
+
                 <Button variant="primary" type="submit" className="btn-login">
                   Log in
                 </Button>
-                {/* ainda nao leva pra lugar nenhum */}
-                <a href="#forgot" className="forgot-password-link"> 
-                  Esqueceu a Senha?
-                </a>
 
+                <p style={{ color: "red", marginTop: "10px" }}>{msg}</p>
+
+                <a href="#forgot" className="forgot-password-link">Esqueceu a Senha?</a>
                 <hr className="separator" />
+                <p className="signup-text">Ainda não tem uma conta?</p>
 
-                <p className="signup-text">
-                  Ainda não tem uma conta?
-                </p>
-                
-                <Button variant="secondary" type="button" className="btn-signup" as={Link} to="/cadastrar">
+                <Button
+                  variant="secondary"
+                  type="button"
+                  className="btn-signup"
+                  as={Link}
+                  to="/cadastrar"
+                >
                   Cadastrar
                 </Button>
 
               </Form>
+
             </div>
           </Col>
+
         </Row>
       </Container>
     </>
   );
-}   
+}
