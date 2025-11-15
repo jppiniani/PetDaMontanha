@@ -1,24 +1,24 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "source": "prj01/package.json",
-        "use": "@vercel/static-build",
-        "config": { "distDir": "prj01/dist" }
-      },
-      {
-        "source": "backend/app.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/api/(.*)",
-        "dest": "backend/app:app"
-      },
-      {
-        "source": "/(.*)",
-        "dest": "prj01/dist/index.html"
-      }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "prj01/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "prj01/dist" }
+    },
+    {
+      "src": "backend/app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/backend/app.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/prj01/dist/index.html"
+    }
+  ]
+}
