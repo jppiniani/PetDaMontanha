@@ -11,14 +11,14 @@
         "use": "@vercel/python"
       }
     ],
-    "routes": [
+    "rewrites": [
       {
         "src": "/api/(.*)",
-        "dest": "backend/app.py"
+        "dest": "backend/app:app"
       },
       {
         "src": "/(.*)",
         "dest": "prj01/dist/index.html"
       }
     ]
-  }  
+  }
