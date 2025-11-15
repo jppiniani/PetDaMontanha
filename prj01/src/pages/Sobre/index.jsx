@@ -43,7 +43,7 @@ export default function Sobre(){
                 <div className="boardTexto2">
 
                 <p className="texto1">
-                Possuímos diversos serviços que serão úteis e agradáveis para seu pet :
+                Possuímos diversos serviços que serão úteis e agradáveis para seu pet:
                 </p>
 
                 <ul className="texto1">
@@ -64,12 +64,12 @@ export default function Sobre(){
                         <ul className="servicos"> 
                             <li>
                                 <Link to="/servicos" className="servicos">
-                                    Hotel e Veterinária <span className="fa fa-chevron-right" />
+                                    Hotel e Veterinária<span className="fa fa-chevron-right" />
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/servicos" className="servicos">
-                                    Cuidados Veterinários <span className="fa fa-chevron-right" />
+                                    Cuidados Veterinários<span className="fa fa-chevron-right" />
                                 </Link>
                             </li>
                             <li>
