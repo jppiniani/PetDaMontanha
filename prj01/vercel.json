@@ -2,22 +2,22 @@
     "version": 2,
     "builds": [
       {
-        "src": "prj01/package.json",
+        "source": "prj01/package.json",
         "use": "@vercel/static-build",
         "config": { "distDir": "prj01/dist" }
       },
       {
-        "src": "backend/app.py",
+        "source": "backend/app.py",
         "use": "@vercel/python"
       }
     ],
     "rewrites": [
       {
-        "src": "/api/(.*)",
+        "source": "/api/(.*)",
         "dest": "backend/app:app"
       },
       {
-        "src": "/(.*)",
+        "source": "/(.*)",
         "dest": "prj01/dist/index.html"
       }
     ]
