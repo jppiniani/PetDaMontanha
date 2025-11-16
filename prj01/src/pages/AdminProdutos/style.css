@@ -1,0 +1,7 @@
+.table{
+    --bs-table-color: #f5f5f5 !important;
+    --bs-table-bg: #6B9160 !important;
+    --bs-table-striped-color: #f5f5f5 !important;
+    --bs-table-active-color: #fff !important;
+    --bs-table-hover-color: #fff !important;
+}

@@ -1,10 +1,10 @@
 from flask import Blueprint, request, jsonify
-from src.models import criar_usuario, buscar_usuario
+from src.models import criar_usuario, buscar_usuario # buscar_usuario agora retorna (senha, role)
 import bcrypt
 import jwt
 import datetime
 import os
-import sqlite3  # Importar para tratar o erro de usuário único
+import sqlite3
 
 auth = Blueprint("auth", __name__)
 
@@ -14,12 +14,10 @@ SECRET = os.getenv(
 )
 
 
-# CADASTRO
+# CADASTRO (sem alterações, pois models.py já define a role padrão)
 @auth.route("/register", methods=["POST"])
 def register():
-    # REMOVIDO o bloco 'if request.method == "OPTIONS":'
-    # A extensão flask-cors gerencia a requisição preflight (OPTIONS)
-
+    # ... (código existente) ...
     data = request.json
     usuario = data.get("usuario")
     senha = data.get("senha")
@@ -31,20 +29,17 @@ def register():
 
     try:
         criar_usuario(usuario, senha_hash)
-        # 201 Created é semanticamente melhor para um novo recurso
         return jsonify({"message": "Usuário cadastrado"}), 201
-    except sqlite3.IntegrityError:  # Ser específico sobre o erro (usuário já existe)
+    except sqlite3.IntegrityError:
         return jsonify({"error": "Usuário já existe"}), 400
     except Exception as e:
         print(f"Erro inesperado no registro: {e}")
         return jsonify({"error": "Erro interno no servidor"}), 500
 
 
-# LOGIN
+# LOGIN (MODIFICADO para incluir 'role' no token)
 @auth.route("/login", methods=["POST"])
 def login():
-    # REMOVIDO o bloco 'if request.method == "OPTIONS":'
-
     data = request.json
     usuario = data.get("usuario")
     senha = data.get("senha")
@@ -52,17 +47,17 @@ def login():
     if not usuario or not senha:
         return jsonify({"error": "Usuário ou senha não preenchidos"}), 400
 
-    row = buscar_usuario(usuario)
+    row = buscar_usuario(usuario) # Agora retorna (senha_hash, role)
 
     if not row:
         return jsonify({"error": "Usuário não encontrado"}), 404
 
-    senha_hash = row[0]
+    senha_hash, role = row # Desempacotar a senha e a role
 
     if bcrypt.checkpw(senha.encode(), senha_hash):
         token = jwt.encode({
             "usuario": usuario,
-            # Use datetime.datetime.now(datetime.timezone.utc) para compatibilidade
+            "role": role, # <-- ADICIONADO: Coloca a 'role' dentro do token
             "exp": datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=3)
         }, SECRET, algorithm="HS256")
 

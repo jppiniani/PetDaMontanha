@@ -1,11 +1,13 @@
 import React from 'react';
-import { produtos } from '../../assets/tabelas';
+// import { produtos } from '../../assets/tabelas'; // <-- REMOVER
+import { productImageMap } from '../../assets/tabelas'; // <-- IMPORTAR O MAPA
 
-export default function ProdutoDetalhe({ productId, onBack }) {
+// Recebe 'productData' como prop
+export default function ProdutoDetalhe({ productData, onBack }) {
     
-    const produtoData = produtos.find(p => p.id === productId);
+    // const produtoData = produtos.find(p => p.id === productId); // <-- REMOVER
 
-    if (!produtoData) {
+    if (!productData) {
         return null; 
     }
     return (
@@ -21,37 +23,31 @@ export default function ProdutoDetalhe({ productId, onBack }) {
                     <div className="col-md-6">
                         <img
                             className="card-img-top mb-5 mb-md-0"
-                            src={produtoData.imagemDetalhe}
-                            alt={produtoData.nome}
+                            // Usa o mapa para encontrar a imagem de detalhe
+                            src={productImageMap[productData.imagemDetalhe] || 'https://dummyimage.com/600x700/dee2e6/6c757d.jpg'}
+                            alt={productData.nome}
                         />
                     </div>
                     <div className="col-md-6">
-                        <div className="small mb-1">{produtoData.sku}</div>
-                        <h1 className="display-5 fw-bolder">{produtoData.nome}</h1>
+                        <div className="small mb-1">{productData.sku}</div>
+                        <h1 className="display-5 fw-bolder">{productData.nome}</h1>
                         <div className="fs-5 mb-5">
-                            {produtoData.precoOriginal ? (
+                            {productData.precoOriginal ? (
                                 <>
                                     <h2 className="text-decoration-line-through">
-                                        {produtoData.precoOriginal}
+                                        {productData.precoOriginal}
                                     </h2>
                                     {' '}
-                                    <h2>{produtoData.preco}</h2>
+                                    <h2>{productData.preco}</h2>
                                 </>
                             ) : (
-                                <h2>{produtoData.preco}</h2>
+                                <h2>{productData.preco}</h2>
                             )}
                         </div>
-                        <p className="lead">{produtoData.descricaoLonga}</p>
-                        <h4>Estoque: {produtoData.estoque}</h4>
+                        <p className="lead">{productData.descricaoLonga}</p>
+                        <h4>Estoque: {productData.estoque}</h4>
                         <br />
                         <div className="d-flex">
-                            {/* <input
-                                className="form-control text-center me-3"
-                                id="inputQuantity"
-                                type="num"
-                                defaultValue="1"
-                                style={{ maxWidth: "3rem" }}
-                            /> */}
                             <button className="btn btn-outline-dark flex-shrink-0 btn-detalhes" type="button">
                                 <a href="https://wa.me/c/5511944926547" className='bi-cart-fill me-1'>Solicitar produto</a>
                             </button>

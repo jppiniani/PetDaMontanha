@@ -11,7 +11,7 @@ export default function NavBar() {
     const [expanded, setExpanded] = useState(false);
     const handleNavClose = () => setExpanded(false);
 
-    const { user, logout } = useAuth();
+    const { user, logout, isAdmin } = useAuth();
     const handleLogout = () => {
       logout();
       handleNavClose(); // Fecha o menu (em telas pequenas)
@@ -64,25 +64,32 @@ export default function NavBar() {
                         </Nav.Link>
                     </Nav>
 
-                                        <Nav className="nav-botao-entrar"> 
-                      {user ? (
-                        // Se o usuário ESTIVER LOGADO
-                        <NavDropdown title={`Olá, ${user}!`} id="user-menu" align="end">
-                          {/* Você pode adicionar mais links aqui (ex: /perfil) */}
-                          <NavDropdown.Item onClick={handleLogout}>
-                            Sair
-                          </NavDropdown.Item>
-                        </NavDropdown>
-                      ) : (
-                        // Se o usuário NÃO ESTIVER LOGADO
-                        <Nav.Link as={Link} to="/entrar" className="btn btn-login" onClick={handleNavClose}>
-                            Entrar
-                        </Nav.Link>
-                      )}
-                    </Nav>
-                    
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+            <Nav className="nav-botao-entrar">
+                {user ? (
+                    // Se o usuário ESTIVER LOGADO
+                    // 2. Corrigir de {user} para {user.usuario}
+                    <NavDropdown title={`Olá, ${user.usuario}!`} id="user-menu" align="end">
+                    {/* 3. Adicionar link de admin condicional */}
+                    {isAdmin && (
+                        <NavDropdown.Item as={Link} to="/admin/produtos" onClick={handleNavClose}>
+                        Gerenciar Produtos
+                        </NavDropdown.Item>
+                    )}
+                    <NavDropdown.Item onClick={handleLogout}>
+                        Sair
+                    </NavDropdown.Item>
+
+                    </NavDropdown> 
+
+                ) : (
+                    // Se o usuário NÃO ESTIVER LOGADO
+                    <Nav.Link as={Link} to="/entrar" className="btn btn-login" onClick={handleNavClose}>
+                    Entrar
+                    </Nav.Link>
+                )}
+                </Nav>
+            </Navbar.Collapse>
+        </Container>
+    </Navbar>
     );
 }

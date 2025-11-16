@@ -1,18 +1,24 @@
 import React from 'react';
-import { produtos } from '../../assets/tabelas';
+// import { produtos } from '../../assets/tabelas'; // <-- REMOVER
+import { productImageMap } from '../../assets/tabelas'; // <-- IMPORTAR O MAPA
 
-export default function ItensPadaria({ id, onShowDetails }) {
-    const produtoData = produtos.find(p => p.id === id);
-
+// Recebe 'produtoData' e 'onShowDetails' como props
+export default function ItensPadaria({ produtoData, onShowDetails }) {
+    
+    // const produtoData = produtos.find(p => p.id === id); // <-- REMOVER
+    
     if (!produtoData) {
         return null;
     }
+
+    // Converte 'sale' (0 ou 1) para booleano
+    const isSale = produtoData.sale === 1; 
 
     return (
         <div className="col mb-5">
             <div className="card h-100">
                 {/* Badge "Sale" condicional */}
-                {produtoData.sale && (
+                {isSale && (
                     <div
                         className="badge bg-dark text-white position-absolute"
                         style={{ top: "0.5rem", right: "0.5rem" }}
@@ -21,10 +27,11 @@ export default function ItensPadaria({ id, onShowDetails }) {
                     </div>
                 )}
 
-                {/* Imagem do Produto */}
+                {/* Imagem do Produto (MODIFICADA) */}
                 <img
                     className="card-img-top"
-                    src={produtoData.imagem}
+                    // Usa o mapa para encontrar a imagem importada
+                    src={productImageMap[produtoData.imagem] || 'https://dummyimage.com/450x300/dee2e6/6c757d.jpg'} // Imagem padrão
                     alt={produtoData.nome}
                 />
 
@@ -37,15 +44,14 @@ export default function ItensPadaria({ id, onShowDetails }) {
                         {/* Rating (Estrelas) condicional */}
                         {produtoData.rating > 0 && (
                             <div className="d-flex justify-content-center small text-warning mb-2">
-                                <div className="bi-star-fill" />
-                                <div className="bi-star-fill" />
-                                <div className="bi-star-fill" />
-                                <div className="bi-star-fill" />
-                                <div className="bi-star-fill" />
+                                {/* Simples, apenas para mostrar que tem rating */}
+                                {Array.from({ length: produtoData.rating }, (_, i) => (
+                                    <div key={i} className="bi-star-fill" />
+                                ))}
                             </div>
                         )}
 
-                        {/* Preço Condicional (com/sem desconto) */}
+                        {/* Preço (sem alterações) */}
                         {produtoData.precoOriginal ? (
                             <>
                                 <span className="text-muted text-decoration-line-through">
@@ -55,7 +61,6 @@ export default function ItensPadaria({ id, onShowDetails }) {
                                 {produtoData.preco}
                             </>
                         ) : (
-                            // Se não tiver preço original, mostra só o preço normal
                             produtoData.preco
                         )}
                     </div>
@@ -64,9 +69,9 @@ export default function ItensPadaria({ id, onShowDetails }) {
                     <div className="text-center">
                         <button 
                             className="btn btn-outline-dark mt-auto btn-detalhes" 
-                            onClick={() => onShowDetails(produtoData.id)}
+                            // Chama a função do pai passando o ID
+                            onClick={() => onShowDetails(produtoData.id)} 
                         >
-                            {/* {produtoData.botaoTexto} */}
                             Mostrar Detalhes
                         </button>
                     </div>
