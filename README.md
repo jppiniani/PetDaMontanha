@@ -1,3 +1,7 @@
+
+<img width="927" height="927" alt="PetDaMontanhaLogo2" src="https://github.com/user-attachments/assets/f834b383-6232-4c7c-85fe-5f50f921672c" />
+
+
 Objetivo Geral:
 
 O objetivo geral deste projeto é desenvolver e implementar uma plataforma web
