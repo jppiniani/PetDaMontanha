@@ -14,35 +14,35 @@
   
 • Nicolas Belisário <a href="https://github.com/nicolasbelisario">
   <img src="https://img.shields.io/badge/github-logo=github" />
-</a>
-<a href="https://www.linkedin.com/in/nicolas-belisario-alves/">
+  </a>
+  <a href="https://www.linkedin.com/in/nicolas-belisario-alves/">
   <img src="https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white" />
   </a>
 
 • Lucas Cavalcante <a href="https://github.com/cavalcante-l">
   <img src="https://img.shields.io/badge/github-logo=github" />
-</a>
-<a href="https://www.linkedin.com/in/lucas-cavalcante-barbosa-924b4835b/">
+  </a>
+  <a href="https://www.linkedin.com/in/lucas-cavalcante-barbosa-924b4835b/">
   <img src="https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white" />
-</a>
+  </a>
 
 • Pedro Rodrigues <a href="https://github.com/PedroRodrigues2508">
   <img src="https://img.shields.io/badge/github-logo=github" />
-</a>
-<a href="https://www.linkedin.com/in/pedro-rodrigues-a698ab2a5/">
+  </a>
+  <a href="https://www.linkedin.com/in/pedro-rodrigues-a698ab2a5/">
   <img src="https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white" />
-</a>
+  </a>
 
 • Gabriela Perdigão <a href="https://github.com/gabriela-perdigao">
   <img src="https://img.shields.io/badge/github-logo=github" />
-</a>
-<a href="https://www.linkedin.com/in/gabriela-perdig%C3%A3o-da-silva-094058262/">
+  </a>
+  <a href="https://www.linkedin.com/in/gabriela-perdig%C3%A3o-da-silva-094058262/">
   <img src="https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white" />
-</a>
+  </a>
 
 <hr>
 
-<h3>Objetivo Geral:</h3>
+<h3>Objetivo Geral</h3>
 
 O objetivo geral deste projeto é desenvolver e implementar uma plataforma web
 completa para a empresa "Pet da Montanha". Esta plataforma visa aprimorar a presença
@@ -54,8 +54,10 @@ possam atualizar alguns produtos comercializados na empresa. O usuário, além d
 consultar em tempo real a disponibilidade de produtos na loja física, como também seu
 valor e uma breve descrição de cada item, poderá em poucos passos e de forma bem
 intuitiva fazer o seu pedido.
+
 <hr>
-<h3>Objetivos Específicos:</h3>
+
+<h3>Objetivos Específicos</h3>
 
 • Realizar boas práticas de Engenharia de Software como Engenharia de Requisitos, escolha do modelo de processo de software e validação, verificação e testes do produto.
 
@@ -68,7 +70,30 @@ intuitiva fazer o seu pedido.
 • Construção e implementação back-end por meio do framework de desenvolvimento web para a linguagem de programação Python (Flask).
 
 • Ao final da integração back-end, permitir que um usuário, através de uma conta administradora, possa manipular produtos na vitrine "Padaria Pet".
+
 <hr>
+
+<h3>Ferramentas e tecnologias utilizadas</h3>
+
+• Front-End: Biblioteca Javascript React, build Vite e Bootstrap
+
+• Back-End: Flask e SQLite3
+
+• Overleaf: Documentação 
+
+• Elfsight: Aplicação de widgets
+
+• Colorlib: Protótipo
+
+<p align="center">
+  <img widht="30" height="30" alt="React" src="https://github.com/devicons/devicon/blob/v2.17.0/icons/react/react-original.svg" />
+  <img widht="30" height="30" alt="Bootstrap" src="https://github.com/devicons/devicon/blob/v2.17.0/icons/bootstrap/bootstrap-original.svg" />
+  <img widht="30" height="30" alt="Vitejs" src="https://github.com/devicons/devicon/blob/v2.17.0/icons/vitejs/vitejs-original.svg" />
+  <img widht="30" height="30" alt="Flask" src="https://skillicons.dev/icons?i=flask" />
+</p>
+
+<hr>
+
 <h3>Como utilizar o nosso software:</h3>
 
 *Observação : É necessário ter o Node.js e o Python instalado em seu sistema.*
@@ -80,7 +105,7 @@ intuitiva fazer o seu pedido.
 <h4>Passo a Passo</h4>
 
 <h4>1. Faça o Download do Arquivo</h4>
-<img width="527" height="527" alt="PetDaMontanhaLogo" src="https://github.com/user-attachments/assets/8d88645e-ad2d-4c91-8d16-6e2f7a929c28" />
+<img width="527" height="527" alt="PetDaMontanhaExemplo1" src="https://github.com/user-attachments/assets/8d88645e-ad2d-4c91-8d16-6e2f7a929c28" />
  
 Existem duas boas práticas para fazer o download do nosso repositório por meio do botão verde *CODE* identificado na imagem acima.
 
@@ -92,26 +117,46 @@ Independente da sua escolha, o importante é abrir o nosso arquivo em seu comput
     
 
 
-<h4>2. Instalando as bibliotecas Python</h4>
+<h4>2. Instalando das bibliotecas Python</h4>
 
-Através do terminal (Recomenda-se o uso do cmd), acesse a pasta backend através do comando : cd backend
-Assim, você estará na pasta principal onde guarda grande parte do código responsável pelo sistema principal do site.
+*Para fins de instrução, usaremos o Vscode como IDE*
+
+Após fazer o download e abrir a pasta PetDaMontanha no vscode, você precisará acessar a pasta backend.
+Utilize o cmd no terminal
+
+![trocaparaocmd](https://github.com/user-attachments/assets/6b1d459f-43e7-4ba1-ae94-176911d82c35)
+
+
+No cmd, digite *'cd backend'*
+
+
+Assim, você estará na pasta onde guardamos grande parte do código responsável pelo sistema principal do site.
     
 
-Em seguida, já na pasta backend, crie o ambiente virtual venv através do comando : python -m venv venv . Logo em seguida, digite : .\venv\Scripts\activate , para ativar o ambiente virtual. Importante: Você saberá que funcionou porque o nome (venv) aparecerá no           início da linha do seu terminal.
-
-Agora, para finalmente instalar as bibliotecas python, escreva : pip install -r requirements.txt
+Agora, para finalmente instalar as bibliotecas python, escreva : *'pip install -r requirements.txt'*
 
 Rode o projeto com os comandos : 
-set FLASK_APP=app.py
-flask run
 
-2- Iniciando o Node
 
-    Para visualizar a aplicação Web com o backend já funcionando, é necessário que você tenha o node corretamente instalado
+*'set FLASK_APP=app.py'*
 
-    Abra uma nova abra no terminal. Entre no 'cmd' do terminal do vscode e digite npm --version. Caso aparecer 'npm: '10.9.2' ou maior' Significa que está correto.
 
-    Ainda no cmd, entre na pasta prj01 através do comando : cd prj01
+*'flask run'*
 
-    Instale  o Node Package Manager com o comando 'npm install' e em seguida digite 'npm run dev' para inicializar o website em um localhost.
+2- Iniciando do Node Package Manager
+
+Para visualizar a aplicação Web com o backend já funcionando, é necessário que você tenha o Node corretamente instalado.
+
+Abra uma nova abra no terminal. Entre no 'cmd' do terminal do vscode e digite *'npm --version'*. Caso aparecer 'npm: '10.9.2' ou maior' Significa que está correto.
+
+Ainda no cmd, entre na pasta prj01 através do comando : *'cd prj01'*.
+
+Instale o Node Package Manager com o comando *'npm install'* e em seguida digite *'npm run dev'* para inicializar o website em um localhost através do link gerado.
+
+<hr>
+<h3>Conclusão</h3>
+
+Todo o projeto foi realizado com carinho e trabalho em equipe. Ao longo do semestre, os alunos se comprometeram a participar semanalmente de reuniões e, por meio de um diagrama Kanban, fracionar e realizar as tarefas. Ao final, um relatório completo foi gerado a fim de documentar todo o processo de desenvolvimento, separando em capítulos as demandas de cada matéria.
+
+Confira nosso documento (ainda não finalizado): [DocumentoPetDaMontanha2411.pdf](https://github.com/user-attachments/files/23709996/DocumentoPetDaMontanha2411.pdf)
+
