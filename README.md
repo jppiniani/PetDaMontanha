@@ -122,7 +122,7 @@ Independente da sua escolha, o importante é abrir o nosso arquivo em seu comput
 *Para fins de instrução, usaremos o Vscode como IDE*
 
 Após fazer o download e abrir a pasta PetDaMontanha no vscode, você precisará acessar a pasta backend.
-Utilize o cmd no terminal
+Para esta parte é possível utilizar o powershell, mas utilizaremos o cmd no terminal pois também usaremos para realizar a próxima etapa.
 
 ![trocaparaocmd](https://github.com/user-attachments/assets/6b1d459f-43e7-4ba1-ae94-176911d82c35)
 
@@ -147,11 +147,11 @@ Rode o projeto com os comandos :
 
 Para visualizar a aplicação Web com o backend já funcionando, é necessário que você tenha o Node corretamente instalado.
 
-Abra uma nova abra no terminal. Entre no 'cmd' do terminal do vscode e digite *'npm --version'*. Caso aparecer 'npm: '10.9.2' ou maior' Significa que está correto.
+Abra uma nova abra no terminal. Entre no 'cmd' (essencial nesta etapa) do terminal do vscode e digite *'npm --version'*. Caso aparecer 'npm: '10.9.2' ou maior' Significa que está correto.
 
 Ainda no cmd, entre na pasta prj01 através do comando : *'cd prj01'*.
 
-Instale o Node Package Manager com o comando *'npm install'* e em seguida digite *'npm run dev'* para inicializar o website em um localhost através do link gerado.
+Instale o Node Package Manager com o comando *'npm install'* e em seguida digite *'npm run dev'* para inicializar o website em um localhost através do link gerado (ctrl+click).
 
 <hr>
 <h3>Conclusão</h3>
