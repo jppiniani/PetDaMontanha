@@ -122,7 +122,7 @@ Independente da sua escolha, o importante é abrir o nosso arquivo em seu comput
 *Para fins de instrução, usaremos o Vscode como IDE*
 
 Após fazer o download e abrir a pasta PetDaMontanha no vscode, você precisará acessar a pasta backend.
-Para esta parte é possível utilizar o powershell, mas utilizaremos o cmd no terminal pois também usaremos para realizar a próxima etapa.
+Para esta parte, é possível utilizar o powershell. Porém, utilizaremos o cmd no terminal pois também usaremos para realizar a próxima etapa.
 
 ![trocaparaocmd](https://github.com/user-attachments/assets/6b1d459f-43e7-4ba1-ae94-176911d82c35)
 
